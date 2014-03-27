@@ -47,7 +47,7 @@ body{
 .logo{
 	padding: 1em;
 	width:180px;
-	height:114px;
+	height:114;
 	position: relative;
 	left: 70px;
 	top: 7px;
@@ -90,7 +90,6 @@ body{
 	position:absolute;
 	z-index: 10;
 	right: 830px;
-	top: 229px;
 }
 .hyperlien1:hover {
 	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #FFF), color-stop(1, #FFF) );
@@ -237,23 +236,39 @@ body{
 }
 
 
-.box2{
-	position:relative;
-	border: solid 2px  #0881A5;
+.onglet1{
+	float: left;
 	background-color:#FFF;
-	-webkit-border-radius: 10px;
-	-moz-border-radius: 10px;
-	border-radius: 10px;
-	-webkit-box-shadow: 5px 5px 10px black;
-	-moz-box-shadow: 5px 5px 10px black;
-	left: 300px;
-	bottom: 10px;
-	float:left;
-	width: 200px;
-	height: 200px;
+	border-left:solid 2px  #0881A5;
+	border-top:solid 2px  #0881A5;
+	border-right:solid 2px  #0881A5;
+	-webkit-border-top-left-radius: 10px;
+	-moz-border-top-left-radius: 10px;
+	border-top-left-radius: 10px;
+	position: relative;
+	bottom: 81px;
+	left: 350px;
+	border-bottom:solid 2px #FFF;
+	z-index: 10;
+	padding: 2px;
 }
 
-.box3{
+.onglet2{
+	float: left;
+	border:solid 2px  #004C75;
+	-webkit-border-top-right-radius: 10px;
+	-moz-border-top-right-radius: 10px;
+	border-top-right-radius: 10px;
+	position: relative;
+	bottom: 81px;
+	left: 350px;
+	z-index: 1;
+	background-color: #CCC;
+	color: #999;
+	padding: 2px;
+}
+
+.box{
 	position:relative;
 	border: solid 2px  #0881A5;
 	background-color:#FFF;
@@ -261,13 +276,12 @@ body{
 	-moz-border-radius: 10px;
 	border-radius: 10px;
 	-webkit-box-shadow: 5px 5px 10px black;
-	-moz-box-shadow: 5px 5px 10px black;
-	left: 400px;
-	bottom: 10px;
+	left: 125px;
+	bottom: 75px;
 	float:left;
-	width: 200px;
-	height: 200px;
+	width: 75%;
 }
+
 
 .sub_box1{
 	-webkit-border-radius: 10px;
