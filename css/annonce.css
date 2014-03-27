@@ -1,0 +1,23 @@
+.content{
+	margin-bottom:0px;
+	background-color:rgba(223,223,223,0.5);
+	padding:1em;
+	position: relative;
+	float:left;
+	width: 1050px;
+	height: auto;
+	min-height:700px;
+	top: 10px;
+	left: 100px;
+}
+
+.band{
+	position: absolute;
+	bottom: 0px;
+	background-color: #0881A5;
+	width: 98.4%;
+	left: 0px;
+	height: 25px;
+	color: #EDEDED;
+	padding: 10px;
+}
