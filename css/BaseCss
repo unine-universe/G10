@@ -1,5 +1,5 @@
 Maxibox {
-	backrgound-color:red;
+	backrgound-color:rgb(255,0,255);
 	
 	
 	}
