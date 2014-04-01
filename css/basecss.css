@@ -4,3 +4,20 @@
 	
 	}
 	
+.annoncessimilaires{
+	padding:1%;
+	border:1px solid black;
+}
+.annoncesimilaire{
+	margin-right:15%;
+	display: inline;
+}
+.imgAnnonceSimilaire{
+	border:1px solid black;
+}
+.textannoncesimilaire{
+	display:inline-block;
+}
+.AutreAnnonce{
+	margin:30% 10% 10% 10%;
+}
