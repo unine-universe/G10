@@ -1,9 +1,26 @@
 #Maxibox {
-	background-color:yellow;
+	width:100%	
+	}
 	
+#DivDroite {
+	background-color:#F2F2F2;
+	width:33%;
+	float:right;
+	border:1px solid black;
+	}
+	
+#ImgBoxTopImg {
+	float:top;
+	float:right;
+	width:100%;
 	
 	}
 	
+#ContactBox {
+	padding-bottom:1%;
+	padding-top:1%;
+}
+
 .TopLine{
 	margin-left:-1%;
 	margin-top:-1%;
@@ -33,4 +50,10 @@
 }
 .AutreAnnonce{
 	margin:38% 10% 10% 10%;
+	
 }
+
+
+
+
+	
