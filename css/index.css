@@ -1,56 +1,61 @@
+html{
+	height:100%;
+	width: 100%;
+}
+
 body{
 	background-image:url('/G2/img/paquerettes3-2.jpg');
-	background-attachment:scroll;
-	background-size:100% 100%;
+	background-attachment:fixed;
+	background-size:120% 120%;
 	background-repeat:no-repeat;
 	background-position:center center;
 	font-family:Arial, Helvetica, sans-serif;
+	height:100%;
 }
 
 .content{
-	margin-bottom:0px;
 	background-color:rgba(223,223,223,0.5);
 	padding:1em;
-	position: relative;
+	position: absolute;
 	float:left;
-	width: 1050px;
-	height: auto;
-	min-height:700px;
-	top: 10px;
-	left: 100px;
+	height: 100%;
+	top: 0%;
+	left: 8%;
+	width: 80%;
 }
 
 .user{
-	padding-right:10px;
+	padding-right:1%;
 	background-color:#0881A5;
 	position:fixed;
-	width: 1074px;
-	top: 0px;
-	left: 107px;
-	right:50px;
-	height: 30px;
+	float:left;
+	width: 81.5%;
+	left: 8%;
+	height: 5%;
 	color: #EDEDED;
 	text-align:right;
-	margin-bottom: 20px;
-	padding-top: 10px;
+	margin-bottom: 4%;
+	padding-top: 1%;
 	z-index: 999;
+	top: 0px;
 }
 
+
 .accueil{
-	position: relative;
+	position: absolute;
 	float: right;
-	bottom: 200px;
+	bottom: 20%;
 	font-style:normal;
 	font-weight: bold;
 }
 
 .logo{
 	padding: 1em;
-	width:180px;
-	height:114px;
+	width:20%;
+	height:20%;
 	position: relative;
-	left: 70px;
-	top: 7px;
+	left: 7%;
+	top: 3%;
 }
 
 .box2{
@@ -62,11 +67,11 @@ body{
 	border-radius: 10px;
 	-webkit-box-shadow: 5px 5px 10px black;
 	-moz-box-shadow: 5px 5px 10px black;
-	left: 300px;
-	bottom: 10px;
+	left: 15em;
+	bottom: 1em;
 	float:left;
-	width: 200px;
-	height: 200px;
+	width: 12em;
+	height: 12em;
 }
 
 .box3{
