@@ -1,5 +1,5 @@
 body{
-	background-image:url('/G10/img/img/paquerettes3-2.jpg');
+	background-image:url('/G10/img/paquerettes3-2.jpg');
 	background-attachment:scroll;
 	background-size:110% 110%;
 	background-repeat:no-repeat;
@@ -110,6 +110,19 @@ body{
 	width: 75%;
 }
 
+.boxContact{
+	position:relative;
+	border: solid 2px  #0881A5;
+	background-color:#FFF;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	-webkit-box-shadow: 5px 5px 10px black;
+	left: 20px;
+	bottom: 5px;
+	float:right;
+	width: 75%;
+}
 .boxList{
 	position:relative;
 	border: solid 2px  #0881A5;
@@ -179,6 +192,8 @@ body{
 	padding: 10px;
 }
 
-.img {
-	< href: "C:\Users\ADA\Desktop\livre.png"
+.img-livre{
+	float:right;
+	width: 75px;
 }
+
