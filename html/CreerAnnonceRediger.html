@@ -41,26 +41,72 @@
     
     <h2> Rédiger une annonce </h2>
     
-
-    		Titre de l'annonce
-    	<Input type="text" name="Nom du cours">	
-    <br><br>
+	<table>
+    		
+    		<tr>
+    			<td>Titre de l'annonce</td>
+    			<td> <Input type="text" style="width:98%" name="Nom de l'annonce" required> </td>	
+    				
+    		</tr>
     
-   
-    		<br>
-    		Description de l'annonce
-    	<Input type="text" name="Nom du cours">	
-    <br><br>
+    	
+    		<tr>
+    			<td>Description de l'annonce</td>
+    			<td width="60%"> <textarea rows="5" cols="40" name="description"> Tapez ici votre description </textarea> </td>
+    		</tr>
+    		
+    
+    		<tr>
+   				<td>Prix de l'annonce</td>
+    			<td> <Input type="text" style="width:98%; height: 100%" name="Prix de l'annonce"> </td>
+    </table>
     
     
-    		Prix de l'annonce
-    	<Input type="text" name="Nom du cours">	
-    <br><br>
+    <h2> Contact </h2>
+    
+	<table>
+    		<tr>
+    			<td >Nom</td>
+    			<td> <Input type="text" style="width:98%; height: 100%" name="Nom de l'annonce" required> </td>	
+    				
+    		</tr>
+    		
+    		<tr>
+    			<td>Prénom</td>
+    			<td> <Input type="text" style="width:98%; height: 100%" name="Nom de l'annonce" required> </td>	
+    		</tr>
+    
+  
+    		<tr>
+    			<td>Addresse/Numéro</td>
+    			<td> <Input type="text" style="width:98%; height: 100%" name="Nom de l'annonce" required> </td>	
+    			<td> <Input type="number" min="1" max="200" style="width:98%" name="Nom de l'annonce"> </td>
+    				
+    		</tr>
+    		
+    		<tr>
+    			<td>NPA/localité</td>
+    			<td> <Input type="number" min="1000" max="9699" style="width:98%; height: 100%" name="Nom de l'annonce"> </td>
+    			<td> <Input type="text" style="width:98%; height: 100%" name="Nom de l'annonce" required> </td>	
+    					
+    		</tr>
+    
+    		<tr>
+   				<td>Adresse mail</td>
+    			<td> <Input type="text" style="width:98%; height: 100%" name="Prix de l'annonce"> </td>
+    		</tr>
+    		
+    		<tr>
+    			<td>Téléphone</td>
+    			<td> <Input type="text" style="width:98%; height: 100%" name="Nom de l'annonce" required> </td>	
+    		</tr>
+    		
+    </table>
     
     
      	<Form action="404.html">
   		<input type="submit" name="Continuer" value="Continuer"/> 
-  	</Form>  
+  		</Form>  
 
 	<div class="band">
        		Petites annonces de l'université de Neuchâtel
