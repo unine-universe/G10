@@ -7,6 +7,7 @@
 	width:33%;
 	float:right;
 	border:1px solid black;
+	padding-bottom: 0.5%;
 	}
 	
 #ImgBoxTopImg {
@@ -17,8 +18,9 @@
 	}
 	
 #ContactBox {
-	padding-bottom:1%;
-	padding-top:1%;
+}
+
+#Multilinks {
 }
 
 .TopLine{
