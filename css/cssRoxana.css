@@ -1,0 +1,167 @@
+body{
+	background-image:url('/G10/img/img/paquerettes3-2.jpg');
+	background-attachment:scroll;
+	background-size:110% 110%;
+	background-repeat:no-repeat;
+	background-position:center center;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+.content{
+	margin-bottom:0px;
+	background-color:rgba(223,223,223,0.5);
+	padding:1em;
+	position: relative;
+	float:left;
+	width: 90%;
+	height: auto;
+	min-height:70%;
+	top: 10px;
+	left: 100px;
+}
+
+.photo {
+	position:relative;
+	float:right;
+	right:10px;
+	font-system:normal;
+	font-weight:bold;
+}
+
+
+.accueil{
+	position: relative;
+	float: right;
+	bottom: 200px;
+	font-style:normal;
+	font-weight: bold;
+}
+
+.logo{
+	padding: 1em;
+	width:180px;
+	height:114;
+	position: relative;
+	left: 70px;
+	top: 7px;
+}
+
+
+.onglet1{
+	float: left;
+	background-color:#FFF;
+	border-left:solid 2px  #0881A5;
+	border-top:solid 2px  #0881A5;
+	border-right:solid 2px  #0881A5;
+	-webkit-border-top-left-radius: 10px;
+	-moz-border-top-left-radius: 10px;
+	border-top-left-radius: 10px;
+	position: relative;
+	bottom: 81px;
+	left: 350px;
+	border-bottom:solid 2px #FFF;
+	z-index: 10;
+	padding: 2px;
+}
+
+.onglet2{
+	float: left;
+	border:solid 2px  #004C75;
+	-webkit-border-top-right-radius: 10px;
+	-moz-border-top-right-radius: 10px;
+	border-top-right-radius: 10px;
+	position: relative;
+	bottom: 81px;
+	left: 350px;
+	z-index: 1;
+	background-color: #CCC;
+	color: #999;
+	padding: 2px;
+}
+
+.box{
+	position:relative;
+	border: solid 2px  #0881A5;
+	background-color:#FFF;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	-webkit-box-shadow: 5px 5px 10px black;
+	left: 20px;
+	bottom: 5px;
+	float:right;
+	width: 75%;
+}
+
+.boxList{
+	position:relative;
+	border: solid 2px  #0881A5;
+	background-color:#FFF;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	-webkit-box-shadow: 5px 5px 10px black;
+	right: 20px;
+	bottom: 3px;
+	float:left;
+	width: 25%;
+{
+	
+	
+.box3{
+	position:relative;
+	border: solid 2px  #0881A5;
+	background-color:#FFF;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	-webkit-box-shadow: 5px 5px 10px black;
+	left: 20px;
+	bottom: 5px;
+	float:right;
+	width: 75%;
+}
+
+.sub_box1{
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	margin-right:auto;
+	margin:30px;
+	padding:10px;
+	border:solid #CBCBCB 1px;
+	padding-bottom: 10px;
+	position: relative;	
+}
+
+.box2{
+	position:relative;
+	border: solid 2px  #0881A5;
+	background-color:#FFF;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	margin-right:auto;
+	margin:30px;
+	padding:10px;
+	border:solid #CBCBCB 1px;
+	padding-bottom: 20px;
+	position: right;
+	bottom: 95%;
+}
+
+.band{
+	position: absolute;
+	bottom: 500px;
+	background-color: #0881A5;
+	width: 95.4%;
+	left: 250px;
+	right:0px;
+	height: 25px;
+	color: #EDEDED;
+	padding: 10px;
+}
+
+.img {
+	a href: "C:\Users\ADA\Desktop\livre.png"
+}
