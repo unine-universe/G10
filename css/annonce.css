@@ -184,3 +184,17 @@ background-color:#6699FF;
 	color: #EDEDED;
 	padding: 10px;
 }
+
+.bouton {
+    width:auto;
+    padding:8px 0;
+    text-align:center;
+    display: inline-block;
+    float:left;
+    margin:0 8px 0 0;
+    border-radius:7px;
+    font-size: 0.85em;
+    width:120px;
+    color:#000;
+    font-family: Arial,sans-serif;
+}
