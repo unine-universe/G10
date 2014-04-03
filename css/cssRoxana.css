@@ -20,6 +20,23 @@ body{
 	left: 100px;
 }
 
+.nav {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	overflow:hidden;
+}
+
+.nav .nav-item {
+    float: right;
+    background-color: #0881A5;
+	width: 15.5%;
+	left: 280px;
+	right:0px;
+	height: 25px;
+	color: #EDEDED;
+	padding: 10px;
+}
 .photo {
 	position:relative;
 	float:right;
@@ -163,5 +180,5 @@ body{
 }
 
 .img {
-	a href: "C:\Users\ADA\Desktop\livre.png"
+	< href: "C:\Users\ADA\Desktop\livre.png"
 }
