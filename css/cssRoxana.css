@@ -102,15 +102,15 @@ text-align: center;
 .list{
 	position: :relative;
 	border:solid 5px #0881A5;
-	background-color:#FFFF;
+	background-color:#FFFFFF;
 	-webkit-border-radius:10px;
 	-moz-border-radius:10px;
 	border-radius:10px;
 	-webkit-box-shadow:5px 5px 10px black;
 	right:50px;
-	bottom:3px;
+	bottom:4px;
 	float:left;
-	width: :75%;
+	width: :55%;
 }
 	
 .contactBox{
