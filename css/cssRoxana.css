@@ -68,33 +68,19 @@ body{
 	float: left;
 	background-color:#FFF;
 	border-left:solid 2px  #0881A5;
-	border-top:solid 2px  #0881A5;
-	border-right:solid 2px  #0881A5;
+	border-top:solid 5px  #0881A5;
+	border-right:solid 5px  #0881A5;
 	-webkit-border-top-left-radius: 10px;
 	-moz-border-top-left-radius: 10px;
 	border-top-left-radius: 10px;
 	position: relative;
-	bottom: 81px;
-	left: 350px;
-	border-bottom:solid 2px #FFF;
-	z-index: 10;
-	padding: 2px;
+	bottom: 5px;
+	right: 5px;
+	border-bottom:solid 5px #FFF;
+	z-index: 15;
+	padding: 5px;
 }
 
-.onglet2{
-	float: left;
-	border:solid 2px  #004C75;
-	-webkit-border-top-right-radius: 10px;
-	-moz-border-top-right-radius: 10px;
-	border-top-right-radius: 10px;
-	position: relative;
-	bottom: 81px;
-	left: 350px;
-	z-index: 1;
-	background-color: #CCC;
-	color: #999;
-	padding: 2px;
-}
 
 .box{
 	position:relative;
@@ -102,28 +88,32 @@ body{
 	background-color:#FFF;
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
-	border-radius: 10px;
+	border-radius: 5px;
 	-webkit-box-shadow: 5px 5px 10px black;
-	left: 20px;
+	center: 50px;
 	bottom: 5px;
 	float:right;
 	width: 75%;
 }
+.texto{
+text-align: center;
+{
 
-.boxContact{
-	position:relative;
-	border: solid 2px  #0881A5;
-	background-color:#FFF;
-	-webkit-border-radius: 10px;
-	-moz-border-radius: 10px;
-	border-radius: 10px;
-	-webkit-box-shadow: 5px 5px 10px black;
-	left: 20px;
-	bottom: 5px;
-	float:right;
-	width: 75%;
+.list{
+	position: :relative;
+	border:solid 5px #0881A5;
+	background-color:#FFFF;
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px;
+	border-radius:10px;
+	-webkit-box-shadow:5px 5px 10px black;
+	right:50px;
+	bottom:3px;
+	float:left;
+	width: :75%;
 }
-.boxList{
+	
+.contactBox{
 	position:relative;
 	border: solid 2px  #0881A5;
 	background-color:#FFF;
@@ -132,22 +122,7 @@ body{
 	border-radius: 10px;
 	-webkit-box-shadow: 5px 5px 10px black;
 	right: 20px;
-	bottom: 3px;
-	float:left;
-	width: 25%;
-{
-	
-	
-.box3{
-	position:relative;
-	border: solid 2px  #0881A5;
-	background-color:#FFF;
-	-webkit-border-radius: 10px;
-	-moz-border-radius: 10px;
-	border-radius: 10px;
-	-webkit-box-shadow: 5px 5px 10px black;
-	left: 20px;
-	bottom: 5px;
+	bottom: 50px;
 	float:right;
 	width: 75%;
 }
@@ -164,21 +139,6 @@ body{
 	position: relative;	
 }
 
-.box2{
-	position:relative;
-	border: solid 2px  #0881A5;
-	background-color:#FFF;
-	-webkit-border-radius: 10px;
-	-moz-border-radius: 10px;
-	border-radius: 10px;
-	margin-right:auto;
-	margin:30px;
-	padding:10px;
-	border:solid #CBCBCB 1px;
-	padding-bottom: 20px;
-	position: right;
-	bottom: 95%;
-}
 
 .band{
 	position: absolute;
@@ -195,5 +155,16 @@ body{
 .img-livre{
 	float:right;
 	width: 75px;
+	padding: 1em;
+	height:114;
+	position: relative;
+	left: 70px;
+	top: 7px;
 }
 
+.sup{
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}

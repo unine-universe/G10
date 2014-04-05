@@ -30,68 +30,59 @@
   		<div class="logo">
     		<img src="/G10/img/Logo-unine.png" alt="Unine Logo"/>
         </div>
-   <ul class="nav">
-    <li class="nav-item"><a href="#">File</a></li>
-    <li class="nav-item"><a href="#">View</a></li>
-    <li class="nav-item"><a href="#">History</a></li>
-    <li class="nav-item"><a href="#">Bookmarks</a></li>
-    <li class="nav-item"><a href="#">Tools</a></li>
-    <li class="nav-item"><a href="#">Help</a></li>
+  
+	<ul class="nav">
+   		 <li class="nav-item"><a href="#">File</a></li>
+   		 <li class="nav-item"><a href="#">View</a></li>
+    	 <li class="nav-item"><a href="#">History</a></li>
+    	 <li class="nav-item"><a href="#">Bookmarks</a></li>
+    	 <li class="nav-item"><a href="#">Tools</a></li>
+    	 <li class="nav-item"><a href="#">Help</a></li>
 	</ul>  
 	
 	   
-        <div class="boxList">
+	<div class="list">
         <table>
 		<ul>Content List</ul>
 		<li type="disc">Livres</li>
 		<li type="disc">Emploi</li>
 		</table> 
-		</div>       
+	</div>       
         
-   <div class="box">
+	<div class="box">
     	<table>
-    	<tr><td><img src="../img/livre.png" class="img-livre" /><div style="clear: both;"></div></td></tr>
-    	<tr><td><span><b>Je vends livre de Micro</b></span></td></tr> 	
-		<tr><td>Type: "offre"</td></tr>
-		<tr><td>Parution: 24.03.2014</td></tr>
-		<tr><td>Region: NeuchÂtel</td></tr>
+    		<table class="texto">
+    		<tr><td><span><b><h1 style="center:20px;">Je vends livre de Micro</h1></b></span></td></tr> 	
+			<tr><td><p>Type:"offre"</p></td></tr>
+			<tr><td><p>Parution: 24.03.2014</p></td></tr>
+			<tr><td><p>Region: NeuchÂtel</p></td></tr>
+			<tr><td><form action="Description">Description</td><td><textarea rows="10" cols="75"></textarea></td>
+			<tr><td>
+			<form action="">
+			</form>
+			</tr></td>
+			</table>
+		</table>    
+     </div>
+     
+        
+       
+    <div class="box">
+    	<table>
+       	<table class="texto">  
+     	<tr><td><span><b><h1 style="center:5px;">Contact details:</h1></b></span></td></tr> 
+     	<tr><td><form action=""><p><tr><td><span><b>CONTACT:</b></span></td></tr></p></form></td></tr>
+		<tr><td><p>Utilisateur:<input type="text" name="user"></p></td></tr>
+		<tr><td><p>Telephone:<input type="text" name="telephone"></p></td></tr>
+		<tr><td><p>Adresse:<input type="text" name="adresse"></p></td></tr>
+		<tr><td><p>E-mail:<input type="text" name="email"></td></tr>
+		<tr><td><p></p>Message: <input type="texte" name="message"></p></td></td>
+		<tr><td>
+		<form action=""><input type="button" value="Envoyer"></form>
+		</tr></td>	
 		</table>
-		<table>
-		<tr><td>
-		<form action="">
-		<tr><td>Description</td><td> 
-		<textarea rows="10" cols="75">
-		</textarea>
-		</td>
-		<tr><td>
-		<form action="">
-		</form>
-		</tr></td>
-      </div>
-        
-       <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>  
-        
-  		       
-        <div class="boxContact">
-        <table>
-		<tr><td>
-		<form action="">
-		<tr><td><span><b>CONTACT:</b></span></td></tr>
-		</form>
-		</td></tr>
-		<tr><td>utilisateur:<input type="text" name="user"></td></tr>
-		<tr><td>Telephone:<input type="text" name="telephone"></td></tr>
-		<tr><td>Adresse:<input type="text" name="adresse"></td></tr>
-		<tr><td>E-mail:<input type="text" name="email"></td></tr>
-		<tr><td>Message: <input type="texte" name="message"></td></td>
-		<tr><td>
-
-		<form action="">
-
-		<input type="button" value="Envoyer">
-		</form>
-		</tr></td>
-        </div>
+		</table>
+   </div>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
@@ -102,6 +93,8 @@
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','UA-XXXXX-X');ga('send','pageview');
         </script>
+       
+       
         </div>
         
     </body>
