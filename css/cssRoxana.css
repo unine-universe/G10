@@ -117,7 +117,7 @@ body{
 	padding: 25px 50px;
 }
 	
-.contactBox{
+.box1{
 	position:relative;
 	border: solid 2px  #0881A5;
 	background-color:#FFF;
@@ -125,22 +125,23 @@ body{
 	-moz-border-radius: 10px;
 	border-radius: 10px;
 	-webkit-box-shadow: 5px 5px 10px black;
-	right: 20px;
-	bottom: 50px;
+	center: 95px;
+	bottom: 85px;
 	float:right;
 	width: 75%;
 }
 
 .sub_box1{
-	-webkit-border-radius: 10px;
-	-moz-border-radius: 10px;
-	border-radius: 10px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
 	margin-right:auto;
 	margin:30px;
 	padding:10px;
 	border:solid #CBCBCB 1px;
 	padding-bottom: 10px;
-	position: relative;	
+	position: relative;
+	float:right;	
 }
 
 
