@@ -27,9 +27,15 @@ body{
 	overflow:hidden;
 }
 
+.navlist{
+	list-style-position:inside;
+	margin:0,
+	padding:0;
+	overflow:hidden;
+}
 .nav .nav-item {
     float: right;
-    background-color: #0881A5;
+    background-color: #EDEDED;
 	width: 15.5%;
 	left: 280px;
 	right:0px;
@@ -96,25 +102,19 @@ body{
 	width: 75%;
 }
 .texto{
-text-align: center;
+	text-align: center;
 {
 
 .list{
 	position: :relative;
 	border:solid 5px #0881A5;
-	background-color:#FFFFFF;
-	-webkit-border-radius:10px;
-	-moz-border-radius:10px;
+	background-color:#EDEDED;
 	border-radius:10px;
-	-webkit-box-shadow:5px 5px 10px black;
 	right:50px;
 	bottom:4px;
 	float:left;
-	width: :55%;
-	padding-top:25px;
-	padding-bottom:25px;
-	padding-right:50px;
-	padding-left:50px;
+	width: :75%;
+	padding: 25px 50px;
 }
 	
 .contactBox{
