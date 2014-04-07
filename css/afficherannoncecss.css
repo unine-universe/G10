@@ -1,11 +1,9 @@
+
 #DescriptionBox {
 	border: 1px solid black;
 	padding: 1px; 
 	background-color: white;
-	-moz-border-radius-topleft: 10%; 
-	-moz-border-radius-topright: 10%; 
-	-moz-border-radius-bottomright: 5%; 
-	-moz-border-radius-bottomleft: 5%;">
+	
 }
 
 #Maxibox {
@@ -34,13 +32,14 @@
 
 
 .TopLine{
-	margin-left:-1%;
-	margin-top:-1%;
+	margin-left:1%;
+	margin-top:1%;
 	margin-bottom:2%;
-	width:98%;
-	padding:0.5% 2% 0.5% 2%;
+	width:99%;
+	padding:0.5% 0% 0.5% 0%;
 	background-color:lightBlue;
 }
+
 .TopPrix{
 	float:right;
 	display:inline;
