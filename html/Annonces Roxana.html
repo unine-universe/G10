@@ -3,36 +3,84 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
+        <title>UniVerse: Student Exchange!</title>
+        <meta name="author" content="Galgau Roxana">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
-
+		<link rel="stylesheet" type="text/css" href="/G10/css/cssRoxana.css"/>
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.7.1.min.js"></script>
     </head>
+   
+   
     <body>
-        <!--[if lt IE 8]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-
-        <!-- Add your site or application content here -->
-        <p>Hello UniVerse! This is the Student Exchange .</p>
-
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
+   		<div class="content">
+   			
+   		<div>
+   		<ul class="nav">
+   		<li class="nav-item"><tr><td><form action=""><input type="button" value="Bloquer"></form></td></tr></li>
+   		<li class="nav-item"><tr><td><form action=""><input type="button" value="Modifier"></form></td></tr></li>
+   		<li class="nav-item"><tr><td><form action=""><input type="button" value="Supprimer"></form></td></tr></li>
+   		<li class="nav-item"><tr><td><form action=""><input type="button" value="Retour au résultat"></form></td></tr></li>
+   		<li class="nav-item"><tr><td><form action=""><input type="button" value="Refrechir"></form></td></tr></li>
+   		</ul>
+  		</div> 
+			  
+			  		
+  		<div class="logo">
+    		<img src="/G10/img/Logo-unine.png" alt="Unine Logo"/>
+        </div>
+  
+	<ul class="nav">
+   		 <li class="nav-item"><a href="#">File</a></li>
+   		 <li class="nav-item"><a href="#">View</a></li>
+    	 <li class="nav-item"><a href="#">History</a></li>
+    	 <li class="nav-item"><a href="#">Bookmarks</a></li>
+    	 <li class="nav-item"><a href="#">Tools</a></li>
+    	 <li class="nav-item"><a href="#">Help</a></li>
+	</ul>  
+	
+	   
+	<div class="list">
+        <table style="float: left">
+		<ul>Content List</ul>
+		<li>Livres</li>
+		<li>Emploi</li>
+		</table> 
+	</div>       
         
+	<div class="box">
+    	<table>
+    		<table class="texto">
+    		<tr><td><span><b><h1 style="center:20px;">Je vends livre de Micro</h1></b></span></td></tr> 	
+			<tr><td><p>Type:"offre"</p></td></tr>
+			<tr><td><p>Parution: 24.03.2014</p></td></tr>
+			<tr><td><p>Region: NeuchÂtel</p></td></tr>
+			<tr><td><form action="Description">Description</td><td><textarea rows="10" cols="75"></textarea></td>
+			<tr><td>
+			<form action="">
+			</form>
+			</td></tr>
+			</table>
+		</table>    
+     </div>
+     
         
-        
-        <!-- #################### -->
-        <!-- VOTRE CODE ICI -->
-        <!-- #################### -->
-        
-        
+       
+    <div class="box">
+    	<table style="float:right">
+     	<tr><td><span><b><h1 style="center:5px;">Contact details:</h1></b></span></td></tr> 
+     	<tr><td><form action=""><p><tr><td><span><b>CONTACT:</b></span></td></tr></p></form></td></tr>
+		<tr><td><p>Utilisateur:<input type="text" name="user"></p></td></tr>
+		<tr><td><p>Telephone:<input type="text" name="telephone"></p></td></tr>
+		<tr><td><p>Adresse:<input type="text" name="adresse"></p></td></tr>
+		<tr><td><p>E-mail:<input type="text" name="email"></p></td></tr>
+		<tr><td><p>Message: <input "message"></p></td></tr>
+		<tr><td>
+		<form action=""><input type="button" value="Envoyer"></form>
+		</td></tr>	
+		</table>
+   </div>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
@@ -43,5 +91,9 @@
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','UA-XXXXX-X');ga('send','pageview');
         </script>
+       
+       
+        </div>
+        
     </body>
 </html>
