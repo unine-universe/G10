@@ -7,6 +7,7 @@ import cherrypy
 import os
 from unipy.accueil import Annonces
 from unipy.compte import Compte
+from unipy.creerAnnonce import CreerAnnonce
 
 # Paramètres pour cherrypy, pas besoin de les modifier.
 cherrypy.config.update({
@@ -23,6 +24,7 @@ root_path = os.path.dirname(__file__)
 # Controlleurs
 accueil = Annonces()
 compte = Compte()
+creerannonce = CreerAnnonce()
 
 # Gestionnaire des chemins d'accès (p. ex. /annonces/new)
 d = cherrypy.dispatch.RoutesDispatcher()
@@ -35,6 +37,7 @@ d.connect('mes-annonces-archives'  , '/compte/annonces/archives'    , controller
 d.connect('mes-favoris'            , '/compte/favoris'              , controller=compte, action='favoris')
 d.connect('mes-favoris-annonces'   , '/compte/favoris/annonces'     , controller=compte, action='favorisAnnonces')
 d.connect('mes-favoris-recherche'  , '/compte/favoris/recherche'    , controller=compte, action='favorisRecherche')
+d.connect('creer-annonce'          , '/creer-annonce'               , controller=creerannonce, action='creer')
 
 # Configuration pour l'application
 conf = {
