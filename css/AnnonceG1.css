@@ -32,7 +32,7 @@ body{
 	position: relative;
 	float:left;
 	width: 1050px;
-	height: auto;
+	height: 114;
 	min-height:700px;
 	top: 10px;
 	left: 100px;
@@ -54,8 +54,6 @@ body{
 	padding-top: 10px;
 	z-index: 999;
 }
-
-
 
 
 .Titre{
@@ -83,14 +81,13 @@ body{
 	position: relative;
 	left: 50px;
 	bottom: 305px;
-	float:left;
-	width: 75%;
 }
 
 .recherche{
 	position:relative;
 	border: solid 2px  #0881A5;
-	background-color:#FFF;
+	background-color: #FFF;
+	opacity:0.75;
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
 	border-radius: 10px;
@@ -98,7 +95,7 @@ body{
 	left: 255px;
 	bottom: 55px;
 	float:left;
-	width: 75%;
+	width: 30%;
 }
 
 .Recherche_mots_cles{
@@ -125,7 +122,43 @@ body{
 	position: relative;
 	bottom: 20px;
 }
+.Annonces{
+	position: relative;
+	border: solid 2px  #0881A5;
+	background-color:#FFF;
+	opacity:0.75;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	-webkit-box-shadow: 5px 5px 10px black;
+	left: 255px;
+	bottom: 10px;
+	float: left;
+	width: 50%;
+}
 
+.Titre_annonce{
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	margin-right: ;
+	margin:30px;
+	padding:10px;
+	border:solid #CBCBCB 1px;
+	padding-bottom: 60px;
+	position: relative;
+	bottom: 60px;
+	
+}
+.Image_annonce{
+	padding: 1em;
+	width:180px;
+	height:114;
+	position: relative;
+	left: 70px;
+	top: 7px;
+	vertical-align:middle;
+}
 /*
  * Remove text-shadow in selection highlight: h5bp.com/i
  * These selection rule sets have to be separate.
@@ -373,3 +406,4 @@ textarea {
         page-break-after: avoid;
     }
 }
+
