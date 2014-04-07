@@ -9,6 +9,11 @@ body {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 13px;
 }
+
+a {
+	color: white;
+}
+
 a:focus {
 	outline: none;
 }
@@ -17,20 +22,44 @@ a:focus {
 }
 
 #wrapper { 
+ padding: 0;
  margin: 0 auto;
- width: 922px;
+ width: 1000px;
  background-color:rgba(223,223,223,0.5);
 }
-#header {
+
+#header { 
+ width: 980px;
+ clear: both;
+ color: white;
+ background-color: rgba(26,109,152,1);
+ margin: 0px 0px 10px 0px;
+ padding: 10px;
+ position:fixed;
+ text-align:right;
+}
+
+#header2 {
  color: #333;
- width: 900px;
+ width: 980px;
  float: left;
  padding: 10px;
  height: 100px;
- margin: 10px 0px 5px 0px;
+ margin: 30px 0px 5px;
 }
-#header img{
+
+#header2 img{
  height: 100px;
+}
+
+#message {
+ color: rgba(26,109,152,1);
+ font: 50px "Brush Script Std";
+ width: 600px;
+ float: right;
+ padding: 30px 0 0;
+ height: 100px;
+ margin-right: 100px;
 }
 
 #navigation {
@@ -45,7 +74,7 @@ a:focus {
  margin: 0px 5px 5px 0px;
  padding: 10px;
  height: 500px;
- width: 195px;
+ width: 250px;
  float: left;
 }
 #rightcolumn { 
@@ -58,7 +87,7 @@ a:focus {
  display: inline;
 }
 #footer { 
- width: 900px;
+ width: 980px;
  clear: both;
  color: #333;
  background-color: rgba(26,109,152,1);

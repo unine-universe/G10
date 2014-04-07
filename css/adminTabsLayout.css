@@ -63,12 +63,7 @@ ul#main-nav li.rubriques {
 ul#main-nav li.forum {
 	z-index: 96;
 }
-#image {
-	position: relative;
-	float: left;
-	margin-left: 40px;
-	margin-top: 25px;
-}
+
 #featured {
 	position: relative;
     background-color: rgba(26,109,152,1);
@@ -77,22 +72,32 @@ ul#main-nav li.forum {
 	height: 400px;
 	color: #ffffff;
 }
-#featured h1 {
-	font-size: 24px;
-	position: relative;
-	margin-bottom: 17px;
-}
-#featured p {
-	line-height: 18px;
+#triage {
 	font-size: 12px;
+	margin-bottom: 10px;
+	padding-left: 5px;
+	padding-top: 20px;
+}
+#tabannonce{
+	margin-left: 10px;
+	margin-right: 10px;
+	background-color: white;
+	height: 320px;
+	color: black;
+}
+
+#pages {
+	font-size: 12px;
+	padding-top: 5px;
+	text-align: center;
 }
 #featured-content{
-	float: right;
 	position: relative;
 	width: 322px;
 	margin-top: 30px;
 	margin-right: 35px;
 	display: inline;
+	padding-top: 30px;
 }
 
 #wrapper2 {  
