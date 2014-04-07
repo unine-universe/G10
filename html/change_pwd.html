@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
+
+        <link rel="stylesheet" href="../css/stylesheet.css">
+        <script src="js/vendor/modernizr-2.7.1.min.js"></script>
+ 
+ <style type="text/css">
+
+
+#register_area{	
+line-height: 2.5;
+padding:10px 30px;
+}
+
+#register_area input {
+width: 150px;
+line-height: normal;
+background-color:white;    
+position: absolute;
+left: 300px;
+border: 1px solid black;
+margin-top: 10px;
+}
+
+.modifier{
+margin-top: 20px;
+}
+
+
+ </style>
+  </head>
+    <body>
+    <div id="entire_page">
+    	<header>
+    		Universe
+    		<div id="search_bar">
+    			<input type="text" placeholder="Rechercher"/>
+    		</div>
+    	</header>
+    	<div class="button"><div id="login_out_button"><a href="#">Login/logout</a></div></div>
+    	<h1>Profil</h1>
+    <div id="lateral_menu">
+    	<ul>
+    		<li><a href="#">Accueil</a></li>
+    		<li><a href="#">Catégories</a></li>
+    		<li><a href="#">Favoris</a></li>
+    		<li><a href="#">Profil</a></li>
+    		<li><a href="#">Aide</a></li>
+    	</ul>
+    </div>
+    <div id="page_content">
+    	<div id="tab_menu">
+    		<a href="#">Profil</a>
+    		<a href="#">Données de facturation</a>
+    		<span id="current_page">Changement de mot de passe</span>
+    	</div>
+    	<form id="register_area">
+    		<label for="old_pwd">Ancient mot de passe</label><input type="password" id="old_pwd" name="old_pwd" placeholder="Mot de passe" /><br />
+    		<label for="new_pwd">Nouveau mot de passe</label><input type="password" id="new_pwd" name="new_pwd" placeholder="Nouveau mot de passe" /><br />
+    		<label for="new_pwd2">Confirmer le mot de passe</label><input type="password" id="new_pwd2" name="new_pwd2" placeholder="Confirmer mot de passe" /><br />
+	    	<div class="button"><div class="modifier"><a href="#">Enregistrer</a></div></div>
+    	</form>
+    </div>
+    </div>
+<footer>
+<div id="copyright">
+GROUPE 6 <br />
+Copyright © 2014
+</div>
+</footer>
+	
+	       
+        <!--[if lt IE 8]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
+    </body>
+</html>

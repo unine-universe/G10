@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
+
+     	<link rel="stylesheet" href="../css/stylesheet.css">
+        <script src="js/vendor/modernizr-2.7.1.min.js"></script>
+ 
+ <style type="text/css">
+
+#login_out_button{
+position: absolute;
+right: 20px; 
+top: 60px; 
+}
+
+#tab_menu {
+position: relative;
+border-bottom: 1px solid #FFA500;
+height: 17px;
+bottom: 17px;
+}
+
+.modifier{
+margin-top: 20px;
+}
+
+#entire_page{
+min-height: 600px;
+}
+
+footer{
+height: 25px;
+background-color: #FFA500;
+position: absolute;
+left: 0px;
+right: 0px;
+font-size: 0.7em;
+text-align: right;
+padding: 10px 30px 10px 0;
+}
+
+#filter{
+bottom: 0px;
+right: 0px;
+top: 0px;
+left: 0px;
+background-color: rgba(0, 0, 0, 0.7);
+z-index: 2;
+width: 100%;
+height: 100%;
+position: fixed;
+}
+
+#login_area{
+z-index: 3;
+background-color: white;
+padding: 20px;
+position: absolute;
+border: 1px solid black;
+top: 150px;
+left: 35%;
+right: 35%;
+min-width: 175px;
+}
+
+#user_name,
+#password {
+display: block;
+margin-top: 10px;
+margin-bottom: 15px;
+}
+
+#info_zone{
+border-top: 2px solid #000;
+border-bottom: 2px solid #000;
+padding-top: 10px;
+margin-bottom: 10px;
+}
+
+.login{
+position: relative;
+bottom: 14px;
+}
+
+.register_link{
+text-align:right;
+}
+
+.register_link a{
+text-decoration: none;
+font-style: italic;
+color: grey;
+}
+
+.close_button{
+position: absolute;
+top: 0;
+right: 5px;
+font-size: 1.5em;
+color: grey;
+}
+
+ </style>
+  
+ 
+    </head>
+    <body>
+    <div id="filter"></div>
+    <div id="login_area">
+	<div class="close_button"><a href="#">&#10005;</a></div>
+    <h2>Login</h2>
+    	<form>
+    		<div id="info_zone">
+    			<label for="user_name">Nom d'utilisateur</label><input type="text" id="user_name" name="user_name" placeholder="Nom d'utilisateur" /><br />
+    			<label for="password">Mot de passe</label><input type="password" id="password" name="password" placeholder="Mot de passe" /><br />
+    			<div class="button"><div class="login"><a href="#">Login</a></div></div>
+    		</div>
+    	</form>
+    	<div class="register_link"><a href="#">Inscription</a></div>
+    </div>
+    <div id="entire_page">
+    	<header>
+    		Universe
+    		<div id="search_bar">
+    			<input type="text" placeholder="Rechercher"/>
+    		</div>
+    	</header>
+    	<div class="button"><div id="login_out_button"><a href="#">Login/logout</a></div></div>
+    	<h1>Login</h1>
+    <div id="lateral_menu">
+    	<ul>
+    		<li><a href="#">Accueil</a></li>
+    		<li><a href="#">Catégories</a></li>
+    		<li><a href="#">Favoris</a></li>
+    		<li><a href="#">Profil</a></li>
+    		<li><a href="#">Aide</a></li>
+    	</ul>
+    </div>
+    </div>
+<footer>
+<div id="copyright">
+GROUPE 6 <br />
+Copyright © 2014
+</div>
+</footer>
+	
+	       
+        <!--[if lt IE 8]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
+    </body>
+</html>
