@@ -1,8 +1,14 @@
+#Description {
+	width:65%; 
+	float:left; 
+	margin-left:1%;
+	}
 
 #DescriptionBox {
 	border: 1px solid black;
 	padding: 1px; 
 	background-color: white;
+	margin-bottom:3%
 	
 }
 
