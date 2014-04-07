@@ -1,3 +1,13 @@
+#DescriptionBox {
+	border: 1px solid black;
+	padding: 1px; 
+	background-color: white;
+	-moz-border-radius-topleft: 10%; 
+	-moz-border-radius-topright: 10%; 
+	-moz-border-radius-bottomright: 5%; 
+	-moz-border-radius-bottomleft: 5%;">
+}
+
 #Maxibox {
 	width:100%	
 	}
@@ -13,8 +23,7 @@
 #ImgBoxTopImg {
 	float:top;
 	float:right;
-	width:100%;
-	
+	width:100%;	
 	}
 	
 #ContactBox {
@@ -22,6 +31,7 @@
 
 #Multilinks {
 }
+
 
 .TopLine{
 	margin-left:-1%;
