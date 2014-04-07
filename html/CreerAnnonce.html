@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>UniVerse, plateforme d'échange de l'Université de
+	Neuchâtel</title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/css/normalize.css">
+<link rel="stylesheet" type="text/css" href="/css/creerAnnonce.css" />
+<link rel="stylesheet" href="/css/main.css">
+<script src="/js/vendor/modernizr-2.7.1.min.js"></script>
+
+</head>
+<body>
+
+	<script
+		src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
+	<script src="/js/plugins.js"></script>
+	<script src="/js/main.js"></script>
+	<script>
+	$(document).ready(function(){
+		$('#typeContinuer').click(function(e){
+			e.preventDefault();
+			$('#annonceOffre').show();
+			$('#annonceType').hide();
+		});
+		$('#typeOffre').click(function(e){
+			e.preventDefault();
+			$('#annonceRediger').show();
+			$('#annonceOffre').hide();
+		});
+		$('#typeRediger').click(function(e){
+			e.preventDefault();
+			$('#annonceValider').show();
+			$('#annonceRediger').hide();
+		});
+	});
+	</script>
+	<div class="content">
+
+		<div class="logo">
+			<img src="/img/Logo-unine.png" alt="Unine Logo" />
+		</div>
+
+		<div class="user">Connecté en tant que: "user" | Logout</div>
+
+
+		<br>
+		<div id="annonceType" style="display: block;">
+			<ul class="nav">
+				<li class="nav-item"><a href="#">Type de l'annonce</a></li>
+				<li class="nav-item"><a href="#">Catégories </a></li>
+				<li class="nav-item"><a href="#">Rédiger l'annonce </a></li>
+				<li class="nav-item"><a href="#">Valider l'annonce</a></li>
+			</ul>
+			<div class="h2">
+				<h2>Type de l'annonce</h2>
+			</div>
+			<Input type="checkbox"> J'offre <br> <br> <Input
+				type="checkbox"> Je cherche <br> <br>
+			<Form action="404.html">
+				<a id="typeContinuer" href="#" class="bouton">Continuer</a>
+			</Form>
+		</div>
+
+
+
+		<div id="annonceOffre" style="display: none;">
+			<ul class="nav">
+				<li class="nav-item"><a href="#">Type de l'annonce</a></li>
+				<li class="nav-item"><a href="#">Catégories </a></li>
+				<li class="nav-item"><a href="#">Rédiger l'annonce </a></li>
+				<li class="nav-item"><a href="#">Valider l'annonce</a></li>
+			</ul>
+			<div class="h2">
+				<h2>Choix de la catégorie :</h2>
+			</div>
+
+			<Form method="post">
+				<p>
+					<Input type="checkbox"> Livres <select name="Livres"
+						size="1">
+						<option>de cours</option>
+						<option>Autres</option>
+					</select> <br> <br> <Input type="checkbox"> Cours de
+					soutien <br> Spécifier le cours <Input type="text"
+						name="Nom du cours"> <br> <br> <Input
+						type="checkbox"> Logements <select name="Logements"
+						size="1">
+						<option>Colocation</option>
+						<option>Appartements</option>
+						<option>Chambre individuelle</option>
+						<option>Chambre double</option>
+					</select> <br> <br> <Input type="checkbox"> Cours de
+					langue <select name="Cours de Langues" size="1">
+						<option>Français</option>
+						<option>Anglais</option>
+						<option>Allemand</option>
+						<option>Italien</option>
+						<option>Espagnol</option>
+						<option>Chinois/mandarin</option>
+						<option>Russe</option>
+						<option>Arabe</option>
+						<option>Hébreu</option>
+					</select> <br> <br> <Input type="checkbox"> Notes de cours
+					<br> Spécifier le cours <Input type="text" name="Nom du cours">
+				</p>
+			</Form>
+			<div class="h2">
+				<h2>Choix de la faculté :</h2>
+			</div>
+
+			<Form method="post">
+				<p>
+					Faculté : <select name="Cours de Langues" size="1">
+						<option>Lettres et Sciences Humaines</option>
+						<option>Sciences Economiques</option>
+						<option>Droit</option>
+						<option>Sciences</option>
+						<option>Théologie</option>
+						<option>Toutes</option>
+					</select>
+				</p>
+			</Form>
+
+			<Form action="404.html">
+				<a id="typeOffre" href="#" class="bouton">Continuer</a>
+			</Form>
+			<br>
+
+		</div>
+
+
+		<div id="annonceRediger" style="display: none;">
+			<ul class="nav">
+				<li class="nav-item"><a href="#">Type de l'annonce</a></li>
+				<li class="nav-item"><a href="#">Catégories </a></li>
+				<li class="nav-item"><a href="#">Rédiger l'annonce </a></li>
+				<li class="nav-item"><a href="#">Valider l'annonce</a></li>
+			</ul>
+			<div class="h2">
+				<h2>Rédiger une annonce</h2>
+			</div>
+			<table>
+
+				<tr>
+					<td>Titre de l'annonce</td>
+					<td><Input type="text" style="width: 98%"
+						name="Nom de l'annonce" required></td>
+
+				</tr>
+
+
+				<tr>
+					<td>Description de l'annonce</td>
+					<td width="60%"><textarea rows="5" cols="40"
+							name="description"> Tapez ici votre description </textarea></td>
+				</tr>
+
+
+				<tr>
+					<td>Prix de l'annonce</td>
+					<td><Input type="text" style="width: 98%; height: 100%"
+						name="Prix de l'annonce"></td>
+				<tr>
+					<td>Image</td>
+					<td><Input type="file" style="width: 98%; height: 100%"
+						name="Image"></td>
+				</tr>
+
+			</table>
+			<div class="h2">
+				<h2>Contact</h2>
+			</div>
+
+			<table>
+				<tr>
+					<td>Nom</td>
+					<td><Input type="text" style="width: 98%; height: 100%"
+						name="Nom de l'annonce" required></td>
+
+				</tr>
+
+				<tr>
+					<td>Prénom</td>
+					<td><Input type="text" style="width: 98%; height: 100%"
+						name="Nom de l'annonce" required></td>
+				</tr>
+
+
+				<tr>
+					<td>Addresse/Numéro</td>
+					<td><Input type="text" style="width: 98%; height: 100%"
+						name="Nom de l'annonce" required></td>
+					<td><Input type="number" min="1" max="200" style="width: 98%"
+						name="Nom de l'annonce"></td>
+
+				</tr>
+
+				<tr>
+					<td>NPA/localité</td>
+					<td><Input type="number" min="1000" max="9699"
+						style="width: 98%; height: 100%" name="Nom de l'annonce">
+					</td>
+					<td><Input type="text" style="width: 98%; height: 100%"
+						name="Nom de l'annonce" required></td>
+
+				</tr>
+
+				<tr>
+					<td>Adresse mail</td>
+					<td><Input type="text" style="width: 98%; height: 100%"
+						name="Prix de l'annonce"></td>
+				</tr>
+
+				<tr>
+					<td>Téléphone</td>
+					<td><Input type="text" style="width: 98%; height: 100%"
+						name="Nom de l'annonce" required></td>
+				</tr>
+
+			</table>
+
+			<Form action="404.html">
+
+				<a id="typeRediger" href="#" class="bouton">Continuer</a>
+			</Form>
+		</div>
+
+		<div id="annonceValider" style="display: none;">
+			<ul class="nav" style="width: 130%; height: 100%">
+				<li class="nav-item"><a href="#">Type de l'annonce</a></li>
+				<li class="nav-item"><a href="#">Catégories </a></li>
+				<li class="nav-item"><a href="#">Rédiger l'annonce </a></li>
+				<li class="nav-item"><a href="#">Valider l'annonce</a></li>
+			</ul>
+
+			<br>
+			<div class="h2">
+				<h2>Résumé de l'offre :</h2>
+			</div>
+
+			<h3>Titre :</h3>
+			<br>
+			<h3>Catégorie :</h3>
+			<br>
+			<h3>Faculté :</h3>
+			<br>
+			<h3>Description de l'offre :</h3>
+			<br>
+			<h3>Prix :</h3>
+			<br>
+			<h3>Contact :</h3>
+			<br>
+
+			<p>
+			<Form method="post"></Form>
+			<Input type="checkbox"> Je confirme avoir lu et accepté les
+			conditions générales <br>
+
+			<Form action="404.html">
+				<input type="submit" name="Annuler" value="Annuler" />
+			</form>
+			<br>
+			<Form action="404.html">
+				<input type="submit" name="Enregistrer" value="Enregistrer" />
+			</form>
+			<br>
+			<br>
+		</div>
+
+		<div class="band">Petites annonces de l'université de Neuchâtel
+		</div>
+
+	</div>
+
+	<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+	<script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
+</body>
+</html>
+
+
+
+
+
