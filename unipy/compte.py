@@ -40,3 +40,7 @@ class Compte(object):
     def favorisRecherche(self):
         # Charger et compléter le template HTML
         return self.env.get_template('mesFavorisRecherches.html').render()
+    
+    def changerMotDePasse(self):
+        # Charger et compléter le template HTML
+        return self.env.get_template('monCompteChangePWD.html').render()
