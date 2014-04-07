@@ -175,12 +175,12 @@ background-color:#6699FF;
 }
 
 .band{
-	position: float;
+	position: absolute;
 	bottom: 0px;
 	background-color: #0881A5;
 	width: 98.4%;
 	left: 0px;
-	height: 25px;
+	height: 5px;
 	color: #EDEDED;
 	padding: 10px;
 }
