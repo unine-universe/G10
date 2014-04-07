@@ -18,7 +18,7 @@ html {
 
 body{
 	background-image:url('/G1/img/paquerettes3-2.jpg');
-	background-attachment:scroll;
+	background-attachment:fixed;
 	background-size:110% 110%;
 	background-repeat:no-repeat;
 	background-position:center center;
@@ -93,7 +93,7 @@ body{
 	border-radius: 10px;
 	-webkit-box-shadow: 5px 5px 10px black;
 	left: 300px;
-	bottom: 305px;
+	bottom: 400px;
 	float: left;
 	width: 50%;
 }
@@ -135,7 +135,7 @@ body{
 	padding:10px;
 	Margin:0px; 
 	left: 255px;
-	bottom: 210px;
+	bottom: 350px;
 	float: left;
 	width: 50%;
 }
@@ -154,7 +154,7 @@ body{
 	padding:10px;
 	Margin:0px; 
 	left: 255px;
-	bottom: 200px;
+	bottom: 330px;
 	float: left;
 	width: 50%;
 }
@@ -172,7 +172,7 @@ body{
 	padding:10px;
 	Margin:0px; 
 	left: 255px;
-	bottom: 150px;
+	bottom: 280px;
 	float: left;
 	width: 50%;
 }
@@ -191,7 +191,7 @@ body{
 	Margin:0px; 
 	left: 255px;
 	left: 255px;
-	bottom: 100px;
+	bottom: 230px;
 	float: left;
 	width: 50%;
 }
