@@ -23,7 +23,7 @@
 	<div id="TopLine" class="TopLine">
 		Titre
 		<div id="TopPrix" class="TopPrix">
-			Prix
+		Prix
 		</div>
 	</div>
 	
