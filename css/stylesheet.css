@@ -1,0 +1,138 @@
+body, html{
+margin: 0;
+font-family: sans-serif;
+height: 100%;
+background-color: #F6F6F6;
+}
+
+h1{
+margin-left: 200px;
+}
+
+header {
+background-color:#005AD9;
+font-size:2em;
+font-weight: bold; 
+background: -moz-linear-gradient(center top , #8BB8F9 5%, #0046AA 100%) repeat scroll 0% 0% transparent;
+width: 100%;
+}
+
+footer {
+background-color: #005AD9;
+position: absolute;
+left: 0px;
+bottom: 0px;
+font-size: 0.7em;
+text-align: right;
+width: 100%;
+background: -moz-linear-gradient(center top , #8BB8F9 5%, #0046AA 100%) repeat scroll 0% 0% transparent;
+vertical-align:inline;
+}
+
+#entire_page{
+min-height: 100%;
+position: relative;
+}
+
+a {
+color:black;
+text-decoration: none;
+}
+
+#lateral_menu {
+position: relative;
+}
+
+#lateral_menu li{
+border: 1px solid #4988EE;
+margin-bottom: 5px; 
+width: 100px;
+list-style-type:none;
+padding: 5px;
+background-color:#98BAF2; 
+}
+
+#search_bar{
+font-size: 15px;
+float: right;
+margin: 5px 30px 0 0;
+font-weight: normal;
+font-style: italic;
+}
+
+#page_content{
+border: 1px solid #4988EE;
+border-top:0px;
+position: absolute;
+top: 150px;
+width: 800px;
+left: 200px;
+background-color: #FFF;
+}
+
+.button a{
+text-decoration: none;
+color: black;
+border: 1px solid black;
+border-radius: 5px;
+padding: 5px;
+background: -moz-linear-gradient(center top , #A9C1E8 5%, #5593F9 100%) repeat scroll 0% 0% transparent;
+}
+
+.button a:hover {
+background: -moz-linear-gradient(center top , #8BB8F9 5%, #0046AA 100%) repeat scroll 0% 0% transparent;
+}
+
+
+#tab_menu {
+position: relative;
+border-bottom: 1px solid #4988EE;
+bottom: 17px;
+left:-1px;
+}
+
+#tab_menu a{
+border: 1px solid #4988EE;
+border-bottom: 0px;
+color: #000;
+text-decoration: none;
+padding: 4px 10px;
+background-color: #4988EE;
+position: relative;
+bottom: 3px;
+border-radius: 10px 10px 0 0;
+}
+
+#current_page{
+border-width: 1px;
+border-style: solid;
+border-color: #4988EE #4988EE #FFF;
+-moz-border-top-colors: none;
+-moz-border-right-colors: none;
+-moz-border-bottom-colors: none;
+-moz-border-left-colors: none;
+border-image: none;
+color: #000;
+text-decoration: none;
+padding: 5px 10px;
+background-color: #FFF;
+border-radius: 10px 10px 0 0;
+position: relative;
+bottom: 4px;
+}
+
+#register_area select {
+position: absolute;
+left: 300px;
+width: 150px;
+}
+	
+#login_out_button{
+position: absolute;
+right: 20px; 
+top: 75px; 
+}
+
+#copyright {
+margin: 10px;
+}
