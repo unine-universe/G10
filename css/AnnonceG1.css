@@ -17,7 +17,7 @@ html {
 }
 
 body{
-	background-image:url('/G2/img/paquerettes3-2.jpg');
+	background-image:url('/G1/img/paquerettes3-2.jpg');
 	background-attachment:scroll;
 	background-size:110% 110%;
 	background-repeat:no-repeat;
@@ -92,10 +92,10 @@ body{
 	-moz-border-radius: 10px;
 	border-radius: 10px;
 	-webkit-box-shadow: 5px 5px 10px black;
-	left: 255px;
-	bottom: 55px;
-	float:left;
-	width: 30%;
+	left: 300px;
+	bottom: 305px;
+	float: left;
+	width: 50%;
 }
 
 .Recherche_mots_cles{
@@ -120,9 +120,9 @@ body{
 	border:solid #CBCBCB 1px;
 	padding-bottom: 20px;
 	position: relative;
-	bottom: 20px;
 }
-.Annonces{
+
+.barre{
 	position: relative;
 	border: solid 2px  #0881A5;
 	background-color:#FFF;
@@ -131,11 +131,71 @@ body{
 	-moz-border-radius: 10px;
 	border-radius: 10px;
 	-webkit-box-shadow: 5px 5px 10px black;
+	width:220px;
+	padding:10px;
+	Margin:0px; 
 	left: 255px;
-	bottom: 10px;
+	bottom: 210px;
 	float: left;
 	width: 50%;
 }
+
+
+.Annonces1{
+	position: relative;
+	border: solid 2px  #0881A5;
+	background-color:#FFF;
+	opacity:0.75;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	-webkit-box-shadow: 5px 5px 10px black;
+	width:220px;
+	padding:10px;
+	Margin:0px; 
+	left: 255px;
+	bottom: 200px;
+	float: left;
+	width: 50%;
+}
+
+.Annonces2{
+	position: relative;
+	border: solid 2px  #0881A5;
+	background-color:#FFF;
+	opacity:0.75;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	-webkit-box-shadow: 5px 5px 10px black;
+	width:220px;
+	padding:10px;
+	Margin:0px; 
+	left: 255px;
+	bottom: 150px;
+	float: left;
+	width: 50%;
+}
+
+.Annonces3{
+	position: relative;
+	border: solid 2px  #0881A5;
+	background-color:#FFF;
+	opacity:0.75;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	-webkit-box-shadow: 5px 5px 10px black;
+	width:220px;
+	padding:10px;
+	Margin:0px; 
+	left: 255px;
+	left: 255px;
+	bottom: 100px;
+	float: left;
+	width: 50%;
+}
+
 
 .Titre_annonce{
 	-webkit-border-radius: 10px;
@@ -150,15 +210,38 @@ body{
 	bottom: 60px;
 	
 }
-.Image_annonce{
+.Image_annonce1{
 	padding: 1em;
 	width:180px;
 	height:114;
 	position: relative;
-	left: 70px;
+	left: 400px;
 	top: 7px;
 	vertical-align:middle;
 }
+
+.Image_annonce2{
+	padding: 1em;
+	width:180px;
+	height:114;
+	position: relative;
+	left: 400px;
+	top: 7px;
+	vertical-align:middle;
+}
+
+.Image_annonce3{
+	padding: 1em;
+	width:180px;
+	height:114;
+	position: relative;
+	left: 400px;
+	top: 7px;
+	vertical-align:middle;
+}
+
+
+
 /*
  * Remove text-shadow in selection highlight: h5bp.com/i
  * These selection rule sets have to be separate.
