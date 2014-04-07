@@ -175,7 +175,7 @@ background-color:#6699FF;
 }
 
 .band{
-	position: absolute;
+	position: float;
 	bottom: 0px;
 	background-color: #0881A5;
 	width: 98.4%;
@@ -190,7 +190,7 @@ background-color:#6699FF;
     padding:8px 0;
     text-align:center;
     display: inline-block;
-    float:left;
+    float:right;
     margin:0 8px 0 0;
     border-radius:7px;
     font-size: 0.85em;
