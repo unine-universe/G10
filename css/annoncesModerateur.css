@@ -1,5 +1,5 @@
 body{
-	background-image:url('/img/paquerettes3-2.jpg');
+	background-image:url('/G10/img/paquerettes3-2.jpg');
 	background-attachment:scroll;
 	background-size:110% 110%;
 	background-repeat:no-repeat;
@@ -33,6 +33,7 @@ body{
 	padding:0;
 	overflow:hidden;
 }
+
 .nav .nav-item {
     float: right;
     background-color: #EDEDED;
@@ -43,10 +44,11 @@ body{
 	color: #EDEDED;
 	padding: 10px;
 }
+
 .photo {
 	position:relative;
 	float:right;
-	right:10px;
+	right:10%;
 	font-system:normal;
 	font-weight:bold;
 }
@@ -180,12 +182,25 @@ body{
 
 .img-livre{
 	float:right;
-	width: 75px;
+	width: 350px;
 	padding: 1em;
 	height:114;
 	position: relative;
-	left: 70px;
+	left: 0%;
 	top: 7px;
+}
+
+
+.SortedBy {position:relative;
+top:30%;
+margin-right:5%;
+float:right
+}
+
+.LastFirst {position:relative;
+top:30.1%;
+margin-right:5.5%;
+float:right
 }
 
 .sup{

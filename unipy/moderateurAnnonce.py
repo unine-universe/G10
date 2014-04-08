@@ -13,7 +13,7 @@ class ModerateurAnnonce(object):
         # Référence au dossier HTML
         self.env = Environment(loader=FileSystemLoader('html'))
     
-    def annonces(self):
+    def annonces(self, **kargs):
         # Charger et compléter le template HTML
         return self.env.get_template('annoncesModerateur.html').render()
     
