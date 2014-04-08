@@ -7,9 +7,6 @@ import cherrypy
 import os
 from unipy.accueil import Annonces
 from unipy.compte import Compte
-from unipy.creerAnnonce import CreerAnnonce
-from unipy.registerLogin import RegisterLogin
-from unipy.moderateurAnnonce import ModerateurAnnonce
 
 # Paramètres pour cherrypy, pas besoin de les modifier.
 cherrypy.config.update({
@@ -26,9 +23,6 @@ root_path = os.path.dirname(__file__)
 # Controlleurs
 accueil = Annonces()
 compte = Compte()
-creerannonce = CreerAnnonce()
-register_login = RegisterLogin()
-moderateurAnnonces = ModerateurAnnonce()
 
 # Gestionnaire des chemins d'accès (p. ex. /annonces/new)
 d = cherrypy.dispatch.RoutesDispatcher()
@@ -41,11 +35,6 @@ d.connect('mes-annonces-archives'  , '/compte/annonces/archives'    , controller
 d.connect('mes-favoris'            , '/compte/favoris'              , controller=compte, action='favoris')
 d.connect('mes-favoris-annonces'   , '/compte/favoris/annonces'     , controller=compte, action='favorisAnnonces')
 d.connect('mes-favoris-recherche'  , '/compte/favoris/recherche'    , controller=compte, action='favorisRecherche')
-d.connect('creer-annonce'          , '/creer-annonce'               , controller=creerannonce, action='creer')
-d.connect('changer-motdepasse'     , '/compte/change-motdepasse'    , controller=compte, action='changerMotDePasse')
-d.connect('inscription'            , '/inscription'                 , controller=register_login, action='register')
-d.connect('login'                  , '/login'                       , controller=register_login, action='login')
-d.connect('moderateur-annonces'    , '/admin/annonces'              , controller=moderateurAnnonces, action='annonces')
 
 # Configuration pour l'application
 conf = {
