@@ -113,13 +113,20 @@ body{
 	center: 20px;
 	bottom: 5px;
 	float:right;
-	width: 75%;
+	width: 35%;
+	margin-right 15px;
+}
+.box2 table{
+	width: 100%; padding: 1%;
+}
+.box2 table td{
+	padding: 20px;
 }
 .texto{
 	text-align: center;
-{
+}
 
-.list{
+.liste{
 	position: :relative;
 	border:solid 5px #0881A5;
 	background-color:#EDEDED;
