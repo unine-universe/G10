@@ -1,26 +1,37 @@
 #Description {
-	width:65%; 
+	width:64.5%; 
 	float:left; 
 	margin-left:1%;
+	background-color:#F2F2F2;
+	border:1px solid rgba(0,0,0,0.1);
+	padding-top:0.3%;
+	padding-bottom:0.3%;
+	padding-left:0.3%;
+	padding-right:0.3%;
 	}
 
 #DescriptionBox {
-	border: 1px solid black;
 	padding: 1px; 
 	background-color: white;
-	margin-bottom:3%
-	
+	padding-bottom:3%;
+
 }
 
+#Tableau {
+	background-color:white;
+	padding-bottom:3%;
+	}
+	
 #Maxibox {
-	width:100%	
+	width:100%
+	background-color:#F2F2F2;	
 	}
 	
 #DivDroite {
 	background-color:#F2F2F2;
-	width:33%;
+	width:32.7%;
 	float:right;
-	border:1px solid black;
+	border:1px solid rgba(0,0,0,0.1);
 	padding-bottom: 0.5%;
 	}
 	
@@ -31,6 +42,7 @@
 	}
 	
 #ContactBox {
+
 }
 
 #Multilinks {
@@ -40,17 +52,26 @@
 .TopLine{
 	margin-left:1%;
 	margin-top:1%;
-	margin-bottom:2%;
+	margin-bottom:1.5%;
 	width:99%;
-	padding:0.5% 0% 0.5% 0%;
 	background-color:lightBlue;
+	border:1px solid rgba(0,0,0,0.1);
+	border-radius:6px;
 }
 
+.Titre{
+	font-weight:bold;
+	margin-left:0.5%;
+	width:80%;
+	float:left;
+	}
+	
 .TopPrix{
 	float:right;
 	display:inline;
 	text-align:right;
 }
+
 .annoncessimilaires{
 	padding:1%;
 	border:1px solid black;
