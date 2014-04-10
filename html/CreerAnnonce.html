@@ -32,10 +32,25 @@
 			$('#annonceRediger').show();
 			$('#annonceOffre').hide();
 		});
+		$('#typeRetour1').click(function(e){
+			e.preventDefault();
+			$('#annonceType').show();
+			$('#annonceOffre').hide();
+		});
 		$('#typeRediger').click(function(e){
 			e.preventDefault();
 			$('#annonceValider').show();
 			$('#annonceRediger').hide();
+		});
+		$('#typeRetour2').click(function(e){
+			e.preventDefault();
+			$('#annonceOffre').show();
+			$('#annonceRediger').hide();
+		});
+		$('#typeRetour3').click(function(e){
+			e.preventDefault();
+			$('#annonceRediger').show();
+			$('#annonceValider').hide();
 		});
 	});
 	</script>
@@ -128,6 +143,9 @@
 
 			<Form action="404.html">
 				<a id="typeOffre" href="#" class="bouton">Continuer</a>
+			</Form>
+			<Form action="404.html">
+				<a id="typeRetour1" href="#" class="bouton">Retour</a>
 			</Form>
 			<br>
 
@@ -225,8 +243,11 @@
 			</table>
 
 			<Form action="404.html">
-
 				<a id="typeRediger" href="#" class="bouton">Continuer</a>
+			</Form>
+			
+			<Form action="404.html">
+				<a id="typeRetour2" href="#" class="bouton">Retour</a>
 			</Form>
 		</div>
 
@@ -257,7 +278,7 @@
 			<br>
 
 			<p>
-			<Form method="post"></Form>
+			
 			<Input type="checkbox"> Je confirme avoir lu et accepté les
 			conditions générales <br>
 
@@ -268,6 +289,10 @@
 			<Form action="404.html">
 				<input type="submit" name="Enregistrer" value="Enregistrer" />
 			</form>
+			<Form action="404.html">
+				<a id="typeRetour3" href="#" class="bouton">Retour</a>
+			</Form>
+			
 			<br>
 			<br>
 		</div>
