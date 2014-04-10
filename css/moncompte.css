@@ -1,14 +1,7 @@
-<<<<<<< HEAD:css/index.css
-
-html{
-	height:100%;
-}
-=======
 html{
 	height:100%;	
 }
 
->>>>>>> b912334bb9e315f71d67bfa5dcecca34b61843ea:css/moncompte.css
 body{
 	background-image:url('/img/paquerettes3-2.jpg');
 	background-attachment:scroll;
@@ -73,8 +66,8 @@ body{
 	border-radius: 10px;
 	-webkit-box-shadow: 5px 5px 10px black;
 	-moz-box-shadow: 5px 5px 10px black;
-	left: 250px;
-	bottom: 10px;
+	left: 25%;
+	bottom: 5%;
 	float:left;
 	width: 300px;
 }
@@ -88,8 +81,8 @@ body{
 	border-radius: 10px;
 	-webkit-box-shadow: 5px 5px 10px black;
 	-moz-box-shadow: 5px 5px 10px black;
-	left: 300px;
-	bottom: 10px;
+	left: 30%;
+	bottom: 5%;
 	float:left;
 	width: 300px;
 	padding-bottom:20px;
@@ -108,11 +101,10 @@ p{
 	border-radius: 10px;
 	-webkit-box-shadow: 5px 5px 10px black;
 	-moz-box-shadow: 5px 5px 10px black;
-	top: 350px;
+	right:50%;
+	top:25%;
 	float:left;
-	width: 200px;
-	height: 200px;
-	left: 250px;
+	width: 300px;
 }
 
 .box5{
@@ -124,11 +116,10 @@ p{
 	border-radius: 10px;
 	-webkit-box-shadow: 5px 5px 10px black;
 	-moz-box-shadow: 5px 5px 10px black;
+	left: 25%;
+	top: 25%;
 	float:left;
-	width: 200px;
-	height: 200px;
-	right: 700px;
-	top: 350px;
+	width: 300px;
 }
 
 .sub_box1{
