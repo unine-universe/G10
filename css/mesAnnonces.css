@@ -1,5 +1,5 @@
 body{
-	background-image:url('/G2/img/paquerettes3-2.jpg');
+	background-image:url('/img/paquerettes3-2.jpg');
 	background-attachment:scroll;
 	background-size:110% 110%;
 	background-repeat:no-repeat;
@@ -250,7 +250,6 @@ body{
 	bottom: 10px;
 	float:left;
 	width: 200px;
-	height: 200px;
 }
 
 .box3{
@@ -266,7 +265,6 @@ body{
 	bottom: 10px;
 	float:left;
 	width: 200px;
-	height: 200px;
 }
 
 .sub_box1{

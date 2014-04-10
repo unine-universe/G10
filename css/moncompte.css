@@ -1,0 +1,168 @@
+<<<<<<< HEAD:css/index.css
+
+html{
+	height:100%;
+}
+=======
+html{
+	height:100%;	
+}
+
+>>>>>>> b912334bb9e315f71d67bfa5dcecca34b61843ea:css/moncompte.css
+body{
+	background-image:url('/img/paquerettes3-2.jpg');
+	background-attachment:scroll;
+	background-size:150% 150%;
+	background-repeat:no-repeat;
+	background-position:10% 0px;
+	font-family:Arial, Helvetica, sans-serif;
+	height:100%;
+}
+
+.content{
+	background-color:rgba(223,223,223,0.5);
+	padding:1em;
+	position: absolute;
+	float:left;
+	top: 0px;
+	left: 8%;
+	width: 80%;
+	height: 130%;
+}
+
+.user{
+	padding-right:1%;
+	background-color:#0881A5;
+	position:fixed;
+	float:left;
+	width: 81.5%;
+	left: 8%;
+	height: 5%;
+	color: #EDEDED;
+	text-align:right;
+	margin-bottom: 4%;
+	padding-top: 1%;
+	z-index: 999;
+	top: 0px;
+}
+
+
+.accueil{
+	position: absolute;
+	float: right;
+	bottom: 20%;
+	font-style:normal;
+	font-weight: bold;
+}
+
+.logo{
+	padding: 1em;
+	width:20%;
+	height:20%;
+	position: relative;
+	left: 7%;
+	top: 3%;
+}
+
+.box2{
+	position:relative;
+	border: solid 2px  #0881A5;
+	background-color:#FFF;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	-webkit-box-shadow: 5px 5px 10px black;
+	-moz-box-shadow: 5px 5px 10px black;
+	left: 250px;
+	bottom: 10px;
+	float:left;
+	width: 300px;
+}
+
+.box3{
+	position:relative;
+	border: solid 2px  #0881A5;
+	background-color:#FFF;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	-webkit-box-shadow: 5px 5px 10px black;
+	-moz-box-shadow: 5px 5px 10px black;
+	left: 300px;
+	bottom: 10px;
+	float:left;
+	width: 300px;
+	padding-bottom:20px;
+}
+
+p{
+	font-size: 80%;
+}
+
+.box4{
+	position:relative;
+	border: solid 2px  #0881A5;
+	background-color:#FFF;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	-webkit-box-shadow: 5px 5px 10px black;
+	-moz-box-shadow: 5px 5px 10px black;
+	top: 350px;
+	float:left;
+	width: 200px;
+	height: 200px;
+	left: 250px;
+}
+
+.box5{
+	position:relative;
+	border: solid 2px  #0881A5;
+	background-color:#FFF;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	-webkit-box-shadow: 5px 5px 10px black;
+	-moz-box-shadow: 5px 5px 10px black;
+	float:left;
+	width: 200px;
+	height: 200px;
+	right: 700px;
+	top: 350px;
+}
+
+.sub_box1{
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	margin-right:auto;
+	margin:20px;
+	padding:10px;
+	border:solid #CBCBCB 1px;
+	padding-bottom: 10px;
+	position: relative;	
+}
+
+.sub_box2{
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	margin-right:auto;
+	margin:30px;
+	padding:10px;
+	border:solid #CBCBCB 1px;
+	padding-bottom: 20px;
+	position: relative;
+	bottom: 20px;
+}
+
+.band{
+	position: absolute;
+	bottom: 0px;
+	background-color: #0881A5;
+	width: 98.4%;
+	left: 0px;
+	height: 25px;
+	color: #EDEDED;
+	padding: 10px;
+}

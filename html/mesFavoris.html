@@ -7,17 +7,17 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" type="text/css" href="/G2/css/mesFavoris.css"/>
-        <script src="js/vendor/modernizr-2.7.1.min.js"></script>
+        <link rel="stylesheet" href="/css/normalize.css">
+        <link rel="stylesheet" href="/css/main.css">
+        <link rel="stylesheet" type="text/css" href="/css/mesFavoris.css"/>
+        <script src="/js/vendor/modernizr-2.7.1.min.js"></script>
     </head>
     <body>
       
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
+        <script>window.jQuery || document.write('<script src="/js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
+        <script src="/js/plugins.js"></script>
+        <script src="/js/main.js"></script>
         
 <div class="content">
 		<div class="user">
@@ -25,15 +25,15 @@
   		</div>
         
     	<div class="logo">
-    		<img src="/G2/img/Logo-unine.png" alt="Unine Logo"/>
+    		<img src="/img/Logo-unine.png" alt="Unine Logo"/>
         </div>
         
         <div class="accueil">
-        	<a href="index.html"> Accueil</a> >>Mes Favoris
+        	<a href='/compte'> Accueil</a> >>Mes Favoris
         </div>
         
         
-            <a href="mesAnnonces.html">
+            <a href='/compte/annonces'>
             <div class="hyperlien1">
             	Mes annonces
             </div></a>
@@ -52,11 +52,17 @@
        
         
        <div class="box2">
-            <div class="sub_box1"><a href="mesFavorisRecherches.html">Recherches</a></div>   
+            <div class="sub_box1"><a href='/compte/favoris/recherche'>Recherches</a></div>
+            <div class="sub_box2">
+            	Vous pouvez sauvegarder les recherches pour être automatiquement averti lorsque de nouvelles annonces correspondent à vos suggestions.
+            </div>   
        </div>
        
         <div class="box3">
-            <div class="sub_box1"><a href="mesFavorisAnnonces.html">Annonces</a></div>   
+            <div class="sub_box1"><a href='/compte/favoris/annonces'>Annonces</a></div> 
+            <div class="sub_box2">
+            	Montre l'ensemble des annonces que l'utilisateur a sauvegardé sous ses favoris.
+            </div>  
        </div>
        
        
