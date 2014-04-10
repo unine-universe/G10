@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Échange services entre étudiants | Universe</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="/css/normalize.css">
+        <link rel="stylesheet" href="/css/main.css">
+        <link rel="stylesheet" type="text/css" href="/css/mesAnnoncesEnLigne.css"/>
+        <script src="/js/vendor/modernizr-2.7.1.min.js"></script>
+    </head>
+    <body>
+      
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="/js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
+        <script src="/js/plugins.js"></script>
+        <script src="/js/main.js"></script>
+        
+<div class="content">
+		<div class="user">
+        	Connecté en tant que: "user" | Logout
+  		</div>
+        
+    	<div class="logo">
+    		<img src="/img/Logo-unine.png" alt="Unine Logo"/>
+        </div>
+        
+         <div class="accueil">
+        	<a href="index.html"> Accueil</a> >> <a href="mesAnnonces.html"> Mes annonces</a> >> En Ligne
+        </div>
+        
+         <a href="mesAnnonces.html">
+            <div class="hyperlien1">
+            	Mes annonces
+            </div></a>
+            
+            <div class="hyperlien2">
+            Confidentialité
+            </div>
+            
+            <div class="hyperlien3">
+            <a href="mesFavoris.html">Mes Favoris</a>
+            </div>
+            
+            <div class="hyperlien4">
+            Mon Profil
+            </div>
+            
+            <div class="onglet1">
+        	En Ligne
+        </div>
+        
+        <div class="onglet2">
+        	<a href="mesAnnoncesArchives.html">Archives</a>
+        </div>
+        
+       <div class="box">
+            <div class="sub_box1">
+            Vous avez actuellement 1 annonce(s) en ligne:
+            </div>
+            <div class="sub_box2">
+            {% for a in annonces %}
+            <div>
+            		<table>
+            		<tr><td>Type</td><td>{{ a[1] }}</td></tr>
+            		<tr><td>Catégorie</td><td>{{ a[3] }}</td></tr>
+            		<tr><td>Faculté</td><td>{{ a[4] }}</td></tr>
+            		<tr><td>Titre</td><td><strong>{{ a[5] }}</strong></td></tr>
+            		<tr><td>Description</td><td>{{ a[6] }}</td></tr>
+            		<tr><td>Prix</td><td>{{ a[7] }}</td></tr>
+            		{% for pic in pics[a[0]] %}
+            			<tr><td colspan="2"><img src="{{ pic[0] }}"/></td></tr>
+            		{% endfor %}
+            		</table>
+            </div>
+            <hr>
+            {% endfor %}
+            </div>
+       </div>
+       
+       <div class="band">
+       		Petits annonces de l'université de Neuchâtel
+       </div>
+       
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
+       
+</div>
+</html>
