@@ -5,7 +5,7 @@ Created on Apr 6, 2014
 '''
 import cherrypy
 import os
-from unipy.accueil import Annonces
+from unipy.annonces import Annonces
 from unipy.compte import Compte
 from unipy.creerAnnonce import CreerAnnonce
 from unipy.registerLogin import RegisterLogin
@@ -24,7 +24,7 @@ cherrypy.config.update({
 # Racine de l'application
 root_path = os.path.dirname(__file__)
 # Controlleurs
-accueil = Annonces()
+annonces = Annonces()
 compte = Compte()
 creerannonce = CreerAnnonce()
 register_login = RegisterLogin()
@@ -33,7 +33,8 @@ moderateurAnnonces = ModerateurAnnonce()
 # Gestionnaire des chemins d'accès (p. ex. /annonces/new)
 d = cherrypy.dispatch.RoutesDispatcher()
 # d.connect('NOM POUR LE CHEMIN',    'CHEMIN depuis la racine',    'OBJECT'                , 'METHODE')
-d.connect('accueil'                , '/'                            , controller=accueil, action='accueil')
+d.connect('accueil'                , '/'                            , controller=annonces, action='annonces')
+d.connect('annonce'                , '/annonce'                     , controller=annonces, action='annonce')
 d.connect('mon-compte'             , '/compte'                      , controller=compte, action='index')
 d.connect('mes-annonces'           , '/compte/annonces'             , controller=compte, action='annonces')
 d.connect('mes-annonces-enligne'   , '/compte/annonces/enligne'       , controller=compte, action='annoncesEnLigne')
@@ -59,4 +60,4 @@ conf = {
         '/js':{'tools.staticdir.on' : True, 'tools.staticdir.dir' :'js'}
         }
 # Démarrage du serveur cherrypy
-cherrypy.quickstart(accueil, '/', conf)
+cherrypy.quickstart(annonces, '/', conf)
