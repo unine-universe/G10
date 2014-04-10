@@ -9,10 +9,8 @@ from unipy.annonces import Annonces
 from unipy.compte import Compte
 from unipy.creerAnnonce import CreerAnnonce
 from unipy.registerLogin import RegisterLogin
-<<<<<<< HEAD
-=======
 from unipy.moderateurAnnonce import ModerateurAnnonce
->>>>>>> 97c6268497e5a9e4482ca8dc489d7ca555e49e84
+
 
 # Paramètres pour cherrypy, pas besoin de les modifier.
 cherrypy.config.update({
@@ -31,10 +29,9 @@ annonces = Annonces()
 compte = Compte()
 creerannonce = CreerAnnonce()
 register_login = RegisterLogin()
-<<<<<<< HEAD
-=======
+
 moderateurAnnonces = ModerateurAnnonce()
->>>>>>> 97c6268497e5a9e4482ca8dc489d7ca555e49e84
+
 
 # Gestionnaire des chemins d'accès (p. ex. /annonces/new)
 d = cherrypy.dispatch.RoutesDispatcher()
@@ -52,11 +49,8 @@ d.connect('creer-annonce'          , '/creer-annonce'               , controller
 d.connect('changer-motdepasse'     , '/compte/change-motdepasse'    , controller=compte, action='changerMotDePasse')
 d.connect('inscription'            , '/inscription'                 , controller=register_login, action='register')
 d.connect('login'                  , '/login'                       , controller=register_login, action='login')
-<<<<<<< HEAD
-=======
 d.connect('moderateur-annonces'    , '/admin/annonces'              , controller=moderateurAnnonces, action='annonces')
 d.connect('moderateur-a-effacer'   , '/admin/annonce/delete'        , controller=moderateurAnnonces, action='remove')
->>>>>>> 97c6268497e5a9e4482ca8dc489d7ca555e49e84
 
 # Configuration pour l'application
 conf = {
