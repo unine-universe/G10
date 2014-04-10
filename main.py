@@ -43,6 +43,7 @@ d.connect('mes-favoris'            , '/compte/favoris'              , controller
 d.connect('mes-favoris-annonces'   , '/compte/favoris/annonces'     , controller=compte, action='favorisAnnonces')
 d.connect('mes-favoris-recherche'  , '/compte/favoris/recherche'    , controller=compte, action='favorisRecherche')
 d.connect('creer-annonce'          , '/creer-annonce'               , controller=creerannonce, action='creer')
+d.connect('enregistrer-annonce'    , '/creer/sauvegarder'           , controller=creerannonce, action='save')
 d.connect('changer-motdepasse'     , '/compte/change-motdepasse'    , controller=compte, action='changerMotDePasse')
 d.connect('inscription'            , '/inscription'                 , controller=register_login, action='register')
 d.connect('login'                  , '/login'                       , controller=register_login, action='login')
