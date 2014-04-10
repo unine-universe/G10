@@ -1,4 +1,4 @@
-﻿#page-wrap {
+﻿#page-wrapAdmin {
 	position: relative;
 	width: 650px;
 	height: 29px;
@@ -64,7 +64,7 @@ ul#main-nav li.forum {
 	z-index: 96;
 }
 
-#featured {
+#featuredAdmin {
 	position: relative;
     background-color: rgba(26,109,152,1);
 	background-repeat: repeat-y;
@@ -72,13 +72,13 @@ ul#main-nav li.forum {
 	height: 400px;
 	color: #ffffff;
 }
-#triage {
+#triageAnnoncesAdmin {
 	font-size: 12px;
 	margin-bottom: 10px;
 	padding-left: 5px;
 	padding-top: 20px;
 }
-#tabannonce{
+#tabannonceAdmin{
 	margin-left: 10px;
 	margin-right: 10px;
 	background-color: white;
@@ -86,12 +86,12 @@ ul#main-nav li.forum {
 	color: black;
 }
 
-#pages {
+#pagesAdmin {
 	font-size: 12px;
 	padding-top: 5px;
 	text-align: center;
 }
-#featured-content{
+#featured-contentAdmin {
 	position: relative;
 	width: 322px;
 	margin-top: 30px;
@@ -100,7 +100,7 @@ ul#main-nav li.forum {
 	padding-top: 30px;
 }
 
-#wrapper2 {  
+#wrapperAdmin2 {  
     width: 190px;
     margin: 10px auto;
     font-size: 0.8125em;

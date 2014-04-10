@@ -21,14 +21,14 @@ a:focus {
 	clear: both;
 }
 
-#wrapper { 
+#wrapperAdmin { 
  padding: 0;
  margin: 0 auto;
  width: 1000px;
  background-color:rgba(223,223,223,0.5);
 }
 
-#header { 
+#headerAdmin { 
  width: 980px;
  clear: both;
  color: white;
@@ -40,7 +40,7 @@ a:focus {
  z-index: 999;
 }
 
-#header2 {
+#headerAdmin2 {
  color: #333;
  width: 980px;
  float: left;
@@ -49,11 +49,11 @@ a:focus {
  margin: 30px 0px 5px;
 }
 
-#header2 img{
+#headerAdmin2 img{
  height: 100px;
 }
 
-#message {
+#messageAdmin {
  color: rgba(26,109,152,1);
  font: 50px "Brush Script Std";
  width: 600px;
@@ -63,14 +63,14 @@ a:focus {
  margin-right: 100px;
 }
 
-#navigation {
+#navigationAdmin {
  float: left;
  width: 900px;
  color: #333;
  padding: 10px;
  margin: 0px 0px 5px 0px;
 }
-#leftcolumn { 
+#leftcolumnAdmin { 
  color: #333;
  margin: 0px 5px 5px 0px;
  padding: 10px;
@@ -78,7 +78,7 @@ a:focus {
  width: 250px;
  float: left;
 }
-#rightcolumn { 
+#rightcolumnAdmin { 
  float: right;
  color: #333;
  margin: 0px 0px 5px 0px;
@@ -87,7 +87,7 @@ a:focus {
  width: 678px;
  display: inline;
 }
-#footer { 
+#footerAdmin { 
  width: 980px;
  clear: both;
  color: #333;
