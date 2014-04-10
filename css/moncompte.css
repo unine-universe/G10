@@ -101,8 +101,8 @@ p{
 	border-radius: 10px;
 	-webkit-box-shadow: 5px 5px 10px black;
 	-moz-box-shadow: 5px 5px 10px black;
-	right:50%;
-	top:25%;
+	right:15%;
+	top:35%;
 	float:left;
 	width: 300px;
 }
@@ -116,8 +116,8 @@ p{
 	border-radius: 10px;
 	-webkit-box-shadow: 5px 5px 10px black;
 	-moz-box-shadow: 5px 5px 10px black;
-	left: 25%;
-	top: 25%;
+	right: 10%;
+	top: 35%;
 	float:left;
 	width: 300px;
 }
