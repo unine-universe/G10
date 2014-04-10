@@ -47,6 +47,7 @@ d.connect('changer-motdepasse'     , '/compte/change-motdepasse'    , controller
 d.connect('inscription'            , '/inscription'                 , controller=register_login, action='register')
 d.connect('login'                  , '/login'                       , controller=register_login, action='login')
 d.connect('moderateur-annonces'    , '/admin/annonces'              , controller=moderateurAnnonces, action='annonces')
+d.connect('moderateur-a-effacer'   , '/admin/annonce/delete'        , controller=moderateurAnnonces, action='remove')
 
 # Configuration pour l'application
 conf = {

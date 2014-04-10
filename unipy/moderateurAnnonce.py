@@ -5,6 +5,7 @@ Created on Apr 6, 2014
 '''
 from jinja2.environment import Environment
 from jinja2.loaders import FileSystemLoader
+from unipy.db import openDB
 
 class ModerateurAnnonce(object):
     env = None
@@ -17,3 +18,14 @@ class ModerateurAnnonce(object):
         # Charger et compléter le template HTML
         return self.env.get_template('annoncesModerateur.html').render()
     
+    def remove(self, a_id):
+        db = openDB()
+        cursor = db.cursor()
+        cursor.execute("DELETE FROM annonce WHERE id='{0}'".format(a_id))
+        # Transmettre le SQL de type INSERT, UPDATE, DELETE
+        db.commit()
+        cursor.close()
+        db.close()
+        
+        return '<h1>Annonce {0} effacée</h1><p><a href="/admin/annonces">Retour</a></p>'.format(a_id)
+        

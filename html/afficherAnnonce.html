@@ -40,13 +40,7 @@
 	
 	
 		<div id="DescriptionBox">
-		<p> Description : blabla </p>
-		<br>Autre ligne 
-		<br>Une nouvelle ligne
-		<br>Encore une! Eh beh!
-		<br>Pas grand chose à dire, en plus.
-		<br>C'est surtout histire de tester, voir si le texte s'aligne bien, si c'est moche, si il faut faire des modifications parce que la phrase est trop longue?
-		<br>Comme quoi, c'est pas parce qu'un texte ne veut rien dire qu'il est inutile. HTML poétique. 
+		{{ desc }} 
 		</div>
 	
 	
@@ -60,7 +54,7 @@
 	</tr>
 	<tr>
 		<td>Prix :</td> 
-		<td><i>CHF__.-</i></td>
+		<td><i>CHF {{ prix }}.-</i></td>
 	</tr>
 	<tr>
 		<td>Lieu :</td>
