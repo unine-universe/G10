@@ -1,5 +1,5 @@
 body{
-	background-image:url('/G10/img/paquerettes3-2.jpg');
+	background-image:url('/img/paquerettes3-2.jpg');
 	background-attachment:scroll;
 	background-size:110% 110%;
 	background-repeat:no-repeat;
@@ -41,7 +41,7 @@ body{
 	left: 280px;
 	right:0px;
 	height: 25px;
-	color: #EDEDED;
+	color: black;
 	padding: 10px;
 }
 
@@ -126,6 +126,7 @@ body{
 }
 .texto{
 	text-align: center;
+	width:100%;
 }
 
 .liste{
@@ -188,17 +189,18 @@ body{
 	position: relative;
 	left: 0%;
 	top: 7px;
+	text-align: right;
 }
 
 
 .SortedBy {position:relative;
-top:30%;
+top:55%;
 margin-right:5%;
 float:right
 }
 
 .LastFirst {position:relative;
-top:30.1%;
+top:55.1%;
 margin-right:5.5%;
 float:right
 }
