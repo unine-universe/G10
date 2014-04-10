@@ -37,6 +37,7 @@ a:focus {
  padding: 10px;
  position:fixed;
  text-align:right;
+ z-index: 999;
 }
 
 #header2 {
