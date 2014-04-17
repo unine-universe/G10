@@ -63,14 +63,14 @@ INSERT INTO picture VALUES(2, '/img/annonces/2/010679448-1.jpg');
 INSERT INTO picture VALUES(2, '/img/annonces/2/010679452-2.jpg');
 
 DROP TABLE user;
-CREATE TABLE user(username TEXT PRIMARY KEY, email TEXT, password TEXT, lastname TEXT, firstname TEXT, age INTEGER, lang TEXT, faculty TEXT, university TEXT, address TEXT, npa INTEGER, city TEXT, canton TEXT, phone TEXT, confirmed TEXT, sms_code TEXT, state TEXT);
+CREATE TABLE user(username TEXT PRIMARY KEY, email TEXT, password TEXT, lastname TEXT, firstname TEXT, age INTEGER, lang TEXT, faculty TEXT, university TEXT, address TEXT, npa INTEGER, city TEXT, canton TEXT, phone TEXT, confirmed TEXT, sms_code TEXT, state TEXT, role TEXT);
 
-INSERT INTO user VALUES('baptistas', 'sofia.baptista@unine.ch', 'baptistas.', 'Baptista', 'Sophia', 23, 'fr', 'FSE', 'Université de Neuchâtel', 'Chemin des Perrières 34', 2072, 'St. Blaise', 'Neuchâtel', '0324567654', 'yes', 'abtr5', 'enabled');
-INSERT INTO user VALUES('gauchatl', 'laetitia.gauchat@unine.ch', 'gauchatl.', 'Gauchat', 'Laetitia', 24, 'fr', 'FSE', 'Université de Neuchâtel', 'Route des Perveuils 2', 2074, 'Marin-Epagnier', 'Neuchâtel', '0320985412', 'yes', '', 'enabled');
-INSERT INTO user VALUES('reratm', 'mathieu.rerat@unine.ch', 'reratm.', 'Rerat', 'Mathieu', 24, 'fr', 'FSE', 'Université de Neuchâtel', 'Route de Beaumont 3', 2068, 'Hauterive', 'Neuchâtel', '0786542387', 'yes', '', 'enabled');
-INSERT INTO user VALUES('dreyerc', 'camille.dreyer@unine.ch', 'dreyerc.', 'Dreyer', 'Camille', 22, 'fr', 'FSE', 'Université de Neuchâtel', 'Rue de la Main 11', 2000, 'Neuchâtel', 'Neuchâtel', '0786432344', 'yes', 'kiu6d', 'enabled');
-INSERT INTO user VALUES('jalex', 'jalex@unine.ch', 'jalex.', 'Jaggi', 'Pauline', 23, 'fr', 'FLSH', 'Université de Neuchâtel', 'Rue de la Main 20', 2000, 'Neuchâtel', 'Neuchâtel', '0780962344', 'no', 'kiu6d', 'pending');
-INSERT INTO user VALUES('bettexs', 'sophie.bettexx@unine.ch', 'bettexs.', 'Bettex', 'Sophie', 21, 'en', 'FLSH', 'Université de Neuchâtel', 'Espace Louis-Agassiz 1', 2000, 'Neuchâtel', 'Neuchâtel', '0320967644', 'yes', '', 'disabled');
+INSERT INTO user VALUES('baptistas', 'sofia.baptista@unine.ch', 'baptistas.', 'Baptista', 'Sophia', 23, 'fr', 'FSE', 'Université de Neuchâtel', 'Chemin des Perrières 34', 2072, 'St. Blaise', 'Neuchâtel', '0324567654', 'yes', 'abtr5', 'enabled', 'user');
+INSERT INTO user VALUES('gauchatl', 'laetitia.gauchat@unine.ch', 'gauchatl.', 'Gauchat', 'Laetitia', 24, 'fr', 'FSE', 'Université de Neuchâtel', 'Route des Perveuils 2', 2074, 'Marin-Epagnier', 'Neuchâtel', '0320985412', 'yes', '', 'enabled', 'user');
+INSERT INTO user VALUES('reratm', 'mathieu.rerat@unine.ch', 'reratm.', 'Rerat', 'Mathieu', 24, 'fr', 'FSE', 'Université de Neuchâtel', 'Route de Beaumont 3', 2068, 'Hauterive', 'Neuchâtel', '0786542387', 'yes', '', 'enabled', 'admin');
+INSERT INTO user VALUES('dreyerc', 'camille.dreyer@unine.ch', 'dreyerc.', 'Dreyer', 'Camille', 22, 'fr', 'FSE', 'Université de Neuchâtel', 'Rue de la Main 11', 2000, 'Neuchâtel', 'Neuchâtel', '0786432344', 'yes', 'kiu6d', 'enabled', 'curator');
+INSERT INTO user VALUES('jalex', 'jalex@unine.ch', 'jalex.', 'Jaggi', 'Pauline', 23, 'fr', 'FLSH', 'Université de Neuchâtel', 'Rue de la Main 20', 2000, 'Neuchâtel', 'Neuchâtel', '0780962344', 'no', 'kiu6d', 'pending', 'user');
+INSERT INTO user VALUES('bettexs', 'sophie.bettexx@unine.ch', 'bettexs.', 'Bettex', 'Sophie', 21, 'en', 'FLSH', 'Université de Neuchâtel', 'Espace Louis-Agassiz 1', 2000, 'Neuchâtel', 'Neuchâtel', '0320967644', 'yes', '', 'disabled', 'user');
 
 DROP TABLE favorite;
 CREATE TABLE favorite(user TEXT, a_id INTEGER, date_added TEXT, PRIMARY KEY(user, a_id));
