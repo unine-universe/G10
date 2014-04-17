@@ -1,102 +1,134 @@
-<!DOCTYPE html>
-<html class="no-js">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>UniVerse: Student Exchange!</title>
-        <meta name="author" content="Galgau Roxana">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" type="text/css" href="/css/annoncesModerateur.css"/>
-        <link rel="stylesheet" href="/css/normalize.css">
-        <link rel="stylesheet" href="/css/main.css">
-        <script src="/js/vendor/modernizr-2.7.1.min.js"></script>
-    </head>
-   
-   
-    <body>
-   		<div class="content">
-   			
-   		<div>
-   		<ul class="nav">
-   		<li class="nav-item"><tr><td><form action=""><input type="button" value="Bloquer"></form></td></tr></li>
-   		<li class="nav-item"><tr><td><form action=""><input type="button" value="Modifier"></form></td></tr></li>
-   		<li class="nav-item"><tr><td><form action=""><input type="button" value="Supprimer"></form></td></tr></li>
-   		<li class="nav-item"><tr><td><form action=""><input type="button" value="Retour au résultat"></form></td></tr></li>     
-   		</ul>
-  		</div>
-		
-		<div>
-		<td class="SortedBy"><form action=><input type="button"  value="sorted by"></form></td>     
-		<td class="LastFirst"><form action=""><select name="annonce"><option value="last post time">last post time</option>
-		<option value="first post time">first post time</option>
-		</select></form></td>
-		</div>
-		
-		
-		<div class="logo">
-    		<img src="/img/Logo-unine.png" alt="Unine Logo"/>
-        </div>
-  
-	<ul class="nav">
-   		 <li class="nav-item"><a href="#">Achat</a></li>
-   		 <li class="nav-item"><a href="#">Vente</a></li>
-    	 <li class="nav-item"><a href="#">Echange</a></li>
-    	 <li class="nav-item"><a href="#">Non Defini</a></li>
-    </ul>
-	
-	   
-	<div class="liste">
-        <table style="float: left">
-		<ul>Content List</ul>
-		<li>Livres</li>
-		<li>Emploi</li>
-		</table> 
-	</div>       
-        
-	<div class="box">
-    	<table>
-    		<table class="texto">
-    		<tr><td><span><b><h1 style="center:20%;">Je vends livre de Micro</h1></b></span></td>
-    			<td style=text-align="right"><img class="img-livre" src="http://idata.over-blog.com/3/47/12/05/peinture-de-livre_Livre.gif" width="450" height="350"></td>
-    		</tr> 	
-			<tr><td><p>Type:"offre"</p></td></tr>
-			<tr><td><p>Parution: 24.03.2014</p></td></tr>
-			<tr><td><p>Region: NeuchÂtel</p></td></tr>
-			<tr><td><form action="Description">Description</td><td><textarea rows="10" cols="75"></textarea></td>
-			<tr><td>
-			<form action="">
-			</form>
-			</td></tr>
-			</table>
-		</table>    
-     </div>
-     
-        
-    <div style="clear: both;"></div>
-    <div class="box2">
-    	<table style="">
-     	<tr><td><span><b><h1 style="center:5px;">Contact details:</h1></b></span></td></tr> 
-     	<tr><td><form action=""><p><tr><td><span><b>CONTACT:</b></span></td></tr></p></form></td></tr>
-		<tr><td><p>User name:<input type="text" name="user"></p></td></tr>
-		<tr><td><p>Message: <input "message"></p></td></tr>
-		<tr><td>
-		<form action=""><input type="button" value="Envoyer"></form>
-		</td></tr>	
-		</table>
-   </div>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Interface Administrateur</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" type="text/css" href="../css/annoncesModerateur.css" />
 
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X');ga('send','pageview');
-        </script>
-       
-       
-        </div>
-        
-    </body>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+</head>
+<body>
+<!-- Begin Wrapper -->
+<div id="wrapper">
+  <!-- Begin Header -->
+  <div id="header">
+  	Connecté en tant que: "admin" | <a href="#">Logout</a>
+  </div>
+  <div id="header2">
+  <img src="../img/Logo-unine.png" alt="logo"/>
+  <div id="message">
+  	Bienvenu(e), Admin
+  </div>
+  </div>
+  <!-- End Header -->
+  <!-- Begin Navigation -->
+  <div id="navigation">
+  <form action="" class="search-form frame inbtn rlarge">
+      <input type="text" name="search" class="search-input" placeholder="Recherche ..." />
+      <input class="search-btn" type="submit" value="Go" />        
+  </form>
+  </div>
+  <!-- End Navigation -->
+  <!-- Begin Left Column -->
+  <div id="leftcolumn">
+  <div id="wrapper2">
+      <ul class="menu">
+          <li class="item1"><a href="#">Nouvelles annonces <span>14</span></a>
+              <ul>
+                  <li class="subitem1"><a href="#">Payantes<span>10</span></a></li>
+                  <li class="subitem2"><a href="#">Gratuites<span>4</span></a></li>
+              </ul>
+          </li>
+          <li class="item2"><a href="#">Nouvelles modifications <span>5</span></a>
+              <ul>
+                  <li class="subitem1"><a href="#">Payantes<span>3</span></a></li>
+                  <li class="subitem2"><a href="#">Gratuites<span>2</span></a></li>
+              </ul>
+          </li>
+          <li class="item3"><a href="#">Notifications <span>4</span></a>
+              <ul>
+                  <li class="subitem1"><a href="#">Utilisateurs<span>3</span></a></li>
+                  <li class="subitem2"><a href="#">Administrateur<span>1</span></a></li>
+              </ul>
+          </li>
+          <li class="item4"><a href="#">Paramètres</a>
+          </li>
+          <li class="item5"><a href="#">Profil</a>
+          </li>
+      </ul>
+  </div>
+  </div>
+  <!-- End Left Column -->
+  <!-- Begin Right Column -->
+  <div id="rightcolumn">
+  <div id="page-wrap">
+  	<ul id="main-nav">
+  		<li class="accueil"><a href="adminGestion.html">Accueil</a></li>
+  		<li class="current"><a href="adminAnnonces.html">Annonces</a></li>
+  		<li class="utilisateurs"><a href="adminUtilisateurs.html">Utilisateurs</a></li>
+  		<li class="rubriques"><a href="adminRubriques.html">Rubriques</a></li>
+  		<li class="forum"><a href="adminForum.html">Forum</a></li>
+  	</ul>
+  	<div class="clear"></div>
+  	<div id="featured">
+  		<div id="featured-content">
+  			<div id="triage">Trier par : <a href="#">Nouveautés</a> / <a href="#">Date de parution</a> / <a href="#">Gratuites</a> / <a href="#">Payantes</a></div>
+  			<div id="tabannonce"><center><table width=100% height=320px border=1>
+  				<tr>
+  				<td width=90% height=33% >
+  				<h style="margin-left: 30%"><b>Je vends mon livre de micro!</b></h><br>
+  				<br><p style="margin-left: 10%">Type:"offre"</p>
+				<p style="margin-left: 10%">Parution: 24.03.2014</p>
+				<p style="margin-left: 10%">Region: NeuchÂtel</p><br>
+				<form action="Description">Description<textarea rows="10" cols="50"></textarea>
+				<form action=""></form>
+  				<td width=10% height=33% align=center><img class="img-livre" src="http://idata.over-blog.com/3/47/12/05/peinture-de-livre_Livre.gif" width="45" height="75"></td>
+  				</tr>
+  				</table></center>
+  			</div>
+  			</div>
+  		<div>
+   				<ul id="nav">
+   				<li class="bloquer"><form action=""><input type="button" value="Bloquer"></form></li>
+   				<li class="modifier"><tr><td><form action=""><input type="button" value="Modifier"></form></td></tr></li>
+   				<li class="Supprimer"><tr><td><form action=""><input type="button" value="Supprimer"></form></td></tr></li>
+   				<li class=""><tr><td><form action=""><input type="button" value="Retour au résultat"></form></td></tr></li>     
+   				</ul>
+  		</div>
+  	</div>
+  </div></div>
+  <!-- End Right Column -->
+  <!-- Begin Footer -->
+  <div id="footer"></div>
+  <!-- End Footer -->
+ </div>
+<!-- End Wrapper -->
+
+<script type="text/javascript">
+$(function() {
+ 
+    var menu_ul = $('.menu > li > ul'),
+        menu_a  = $('.menu > li > a');
+     
+    menu_ul.hide();
+ 
+    menu_a.click(function(e) {
+        e.preventDefault();
+        if(!$(this).hasClass('active')) {
+            menu_a.removeClass('active');
+            menu_ul.filter(':visible').slideUp('normal');
+            $(this).addClass('active').next().stop(true,true).slideDown('normal');
+        } else {
+            $(this).removeClass('active');
+            $(this).next().stop(true,true).slideUp('normal');
+        }
+    });
+ 
+});
+</script>
+
+</body>
 </html>
