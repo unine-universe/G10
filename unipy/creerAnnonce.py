@@ -24,6 +24,7 @@ class CreerAnnonce(object):
             cursor = db.cursor()
             cursor.execute("INSERT INTO annonce VALUES(NULL, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)", 
                            (kwargs['type'], kwargs['publisher'], kwargs['category'], '', kwargs['title'], '', 0, 'to_discuss', '', '', '', '', '', '', '', ''))
+            # Enregistrer les insertions.
             db.commit()
             if cursor.rowcount == 1:
                 return '<h1>Annonce enregistrée</h1><p><a href="/compte">Aller sur mon compte</a></p>'
