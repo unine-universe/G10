@@ -6,6 +6,7 @@ Created on Apr 6, 2014
 from jinja2.environment import Environment
 from jinja2.loaders import FileSystemLoader
 from unipy.db import openDB
+from unipy.registerLogin import require, member_of, any_of
 
 class ModerateurAnnonce(object):
     env = None
@@ -14,6 +15,7 @@ class ModerateurAnnonce(object):
         # Référence au dossier HTML
         self.env = Environment(loader=FileSystemLoader('html'))
     
+    @require(any_of(member_of('admin'), member_of('curator')))
     def annonces_accueil(self):
         # Charger et compléter le template HTML
         return self.env.get_template('adminGestion.html').render()

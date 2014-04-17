@@ -20,7 +20,8 @@ cherrypy.config.update({
     'server.socket_port': 8080,
     'log.error_file': 'site.log',
     'log.screen': True,
-    'tools.sessions.on': True
+    'tools.sessions.on': True,
+    'tools.auth.on': True
 })
 
 # Racine de l'application
