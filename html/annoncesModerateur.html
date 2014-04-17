@@ -21,23 +21,28 @@
    		<li class="nav-item"><tr><td><form action=""><input type="button" value="Bloquer"></form></td></tr></li>
    		<li class="nav-item"><tr><td><form action=""><input type="button" value="Modifier"></form></td></tr></li>
    		<li class="nav-item"><tr><td><form action=""><input type="button" value="Supprimer"></form></td></tr></li>
-   		<li class="nav-item"><tr><td><form action=""><input type="button" value="Retour au résultat"></form></td></tr></li>
-   		<li class="nav-item"><tr><td><form action=""><input type="button" value="Refrechir"></form></td></tr></li>
+   		<li class="nav-item"><tr><td><form action=""><input type="button" value="Retour au résultat"></form></td></tr></li>     
    		</ul>
-  		</div> 
-			  
-			  		
-  		<div class="logo">
+  		</div>
+		
+		<div>
+		<td class="SortedBy"><form action=><input type="button"  value="sorted by"></form></td>     
+		<td class="LastFirst"><form action=""><select name="annonce"><option value="last post time">last post time</option>
+		<option value="first post time">first post time</option>
+		</select></form></td>
+		</div>
+		
+		
+		<div class="logo">
     		<img src="/img/Logo-unine.png" alt="Unine Logo"/>
         </div>
   
 	<ul class="nav">
-   		 <li class="nav-item"><a href="#">File</a></li>
-   		 <li class="nav-item"><a href="#">History</a></li>
-    	 <li class="nav-item"><a href="#">Bookmarks</a></li>
-    	 <li class="nav-item"><a href="#">Tools</a></li>
-    	 <li class="nav-item"><a href="#">Help</a></li>
-	</ul>  
+   		 <li class="nav-item"><a href="#">Achat</a></li>
+   		 <li class="nav-item"><a href="#">Vente</a></li>
+    	 <li class="nav-item"><a href="#">Echange</a></li>
+    	 <li class="nav-item"><a href="#">Non Defini</a></li>
+    </ul>
 	
 	   
 	<div class="liste">
@@ -51,23 +56,15 @@
 	<div class="box">
     	<table>
     		<table class="texto">
-<<<<<<< HEAD
     		<tr><td><span><b><h1 style="center:20px;">Annonce #{{a_id}}</h1></b></span></td>
-=======
-    		<tr><td><span><b><h1 style="center:20px;">Je vends livre de Micro</h1></b></span></td>
->>>>>>> 7334a0c68ede3032eaae689860a92b1a1ed42548
     			<td><img class="img-livre" src="http://idata.over-blog.com/3/47/12/05/peinture-de-livre_Livre.gif" width="42" height="42"></td>
     		</tr> 	
     			<tr><td><p><a href="/admin/annonce/delete?a_id=3">Effacer Annonce</a></p></td></tr>
 			<tr><td><p>Type:"offre"</p></td></tr>
 			<tr><td><p>Parution: 24.03.2014</p></td></tr>
 			<tr><td><p>Region: NeuchÂtel</p></td></tr>
-<<<<<<< HEAD
 			<tr><td><p>Prix: CHF {{ prix }}</p></td></tr>
 			<tr><td><form action="Description">{{ desc }}</td><td><textarea rows="10" cols="75"></textarea></td>
-=======
-			<tr><td><form action="Description">Description</td><td><textarea rows="10" cols="75"></textarea></td>
->>>>>>> 7334a0c68ede3032eaae689860a92b1a1ed42548
 			<tr><td>
 			<form action="">
 			</form>
@@ -82,10 +79,7 @@
     	<table style="">
      	<tr><td><span><b><h1 style="center:5px;">Contact details:</h1></b></span></td></tr> 
      	<tr><td><form action=""><p><tr><td><span><b>CONTACT:</b></span></td></tr></p></form></td></tr>
-		<tr><td><p>Utilisateur:<input type="text" name="user"></p></td></tr>
-		<tr><td><p>Telephone:<input type="text" name="telephone"></p></td></tr>
-		<tr><td><p>Adresse:<input type="text" name="adresse"></p></td></tr>
-		<tr><td><p>E-mail:<input type="text" name="email"></p></td></tr>
+		<tr><td><p>User name:<input type="text" name="user"></p></td></tr>
 		<tr><td><p>Message: <input "message"></p></td></tr>
 		<tr><td>
 		<form action=""><input type="button" value="Envoyer"></form>
