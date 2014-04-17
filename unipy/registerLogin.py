@@ -3,6 +3,7 @@ Created on Apr 6, 2014
 
 @author: hmuriel
 '''
+import cherrypy
 from jinja2.environment import Environment
 from jinja2.loaders import FileSystemLoader
 
@@ -17,6 +18,12 @@ class RegisterLogin(object):
         # Charger et compléter le template HTML
         return self.env.get_template('inscription.html').render()
     
-    def login(self):
+    def login(self, user_name=None, password=None):
         # Charger et compléter le template HTML
-        return self.env.get_template('login.html').render()
+        print(user_name, password)
+        if user_name and password:
+            # verify login
+            raise cherrypy.HTTPRedirect('/compte')
+        else:
+            return self.env.get_template('login.html').render()
+        
