@@ -77,7 +77,8 @@ ul#main-nav li.forum {
 	margin-bottom: 10px;
 	padding-left: 5px;
 	padding-top: 20px;
-}
+} 
+
 #tabannonceAdmin{
 	margin-left: 10px;
 	margin-right: 10px;
@@ -86,11 +87,28 @@ ul#main-nav li.forum {
 	color: black;
 }
 
+.imageannonceAdmin {
+	margin-left: 5px;
+	width. 90px;
+	height: 90px;
+	float: left;
+}
+
+
+.textannonceAdmin {
+	height: 90px;
+	width: 300px;
+	margin-left: 120px;
+	background-color: #000000;
+}
+
+
 #pagesAdmin {
 	font-size: 12px;
 	padding-top: 5px;
 	text-align: center;
 }
+
 #featured-contentAdmin {
 	position: relative;
 	width: 322px;
