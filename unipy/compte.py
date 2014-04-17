@@ -18,6 +18,10 @@ class Compte(object):
         # Charger et compléter le template HTML
         return self.env.get_template('monCompte.html').render()
     
+    def profile(self):
+        # Charger et compléter le template HTML
+        return self.env.get_template('monCompteProfil.html').render()
+    
     def annonces(self):
         # Charger et compléter le template HTML
         return self.env.get_template('mesAnnonces.html').render()

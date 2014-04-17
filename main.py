@@ -49,7 +49,7 @@ d.connect('mes-favoris-recherche'  , '/compte/favoris/recherche'    , controller
 d.connect('creer-annonce'          , '/creer-annonce'               , controller=creerannonce, action='creer')
 d.connect('enregistrer-annonce'    , '/creer/sauvegarder'           , controller=creerannonce, action='save')
 d.connect('changer-motdepasse'     , '/compte/change-motdepasse'    , controller=compte, action='changerMotDePasse')
-d.connect('inscription'            , '/inscription'                 , controller=register_login, action='register')
+d.connect('mon-profil'             , '/compte/profil'               , controller=compte, action='profile')
 d.connect('login'                  , '/login'                       , controller=register_login, action='login')
 d.connect('moderateur-admin'       , '/admin'                       , controller=moderateurAnnonces, action='annonces_accueil')
 d.connect('moderateur-annonces'    , '/admin/annonces'              , controller=moderateurAnnonces, action='annonces')
@@ -58,6 +58,10 @@ d.connect('moderateur-a-effacer'   , '/admin/annonce/delete'        , controller
 d.connect('admin-users'            , '/admin/users'                 , controller=gestion_user, action='adminUsers')
 d.connect('admin-user'             , '/admin/user'                  , controller=gestion_user, action='adminUser')
 d.connect('rubriques'              , '/admin/rubriques'             , controller=rubrique, action='rubriques')
+d.connect('rubriques'              , '/admin/rubriques'             , controller=rubrique, action='rubriques')
+d.connect('inscription'            , '/inscription'                 , controller=register_login, action='inscription')
+d.connect('inscrip-conf-sms'       , '/inscription/confirmer-sms'   , controller=register_login, action='confirmerSMS')
+d.connect('inscrip-conf-email'     , '/inscription/confirmer-email' , controller=register_login, action='confirmerEmail')
 
 # Configuration pour l'application
 conf = {

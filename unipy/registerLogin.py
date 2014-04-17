@@ -13,10 +13,18 @@ class RegisterLogin(object):
         # Référence au dossier HTML
         self.env = Environment(loader=FileSystemLoader('html'))
     
-    def register(self):
-        # Charger et compléter le template HTML
-        return self.env.get_template('inscription.html').render()
-    
     def login(self):
         # Charger et compléter le template HTML
         return self.env.get_template('login.html').render()
+    
+    def inscription(self):
+        # Charger et compléter le template HTML
+        return self.env.get_template('creationCompte.html').render()
+    
+    def confirmerSMS(self):
+        # Charger et compléter le template HTML
+        return self.env.get_template('confirmationCompteSMS.html').render()
+    
+    def confirmerEmail(self):
+        # Charger et compléter le template HTML
+        return self.env.get_template('confirmationCompteEmail.html').render()
