@@ -10,6 +10,7 @@ from unipy.compte import Compte
 from unipy.creerAnnonce import CreerAnnonce
 from unipy.registerLogin import RegisterLogin
 from unipy.moderateurAnnonce import ModerateurAnnonce
+from unipy.gestionUtilisateur import GestionUtilisateur
 
 # Paramètres pour cherrypy, pas besoin de les modifier.
 cherrypy.config.update({
@@ -29,6 +30,7 @@ compte = Compte()
 creerannonce = CreerAnnonce()
 register_login = RegisterLogin()
 moderateurAnnonces = ModerateurAnnonce()
+gestion_user = GestionUtilisateur()
 
 # Gestionnaire des chemins d'accès (p. ex. /annonces/new)
 d = cherrypy.dispatch.RoutesDispatcher()
@@ -49,6 +51,8 @@ d.connect('inscription'            , '/inscription'                 , controller
 d.connect('login'                  , '/login'                       , controller=register_login, action='login')
 d.connect('moderateur-annonces'    , '/admin/annonces'              , controller=moderateurAnnonces, action='annonces')
 d.connect('moderateur-a-effacer'   , '/admin/annonce/delete'        , controller=moderateurAnnonces, action='remove')
+d.connect('admin-users'            , '/admin/users'                 , controller=gestion_user, action='adminUsers')
+d.connect('admin-user'            , '/admin/user'                   , controller=gestion_user, action='adminUser')
 
 # Configuration pour l'application
 conf = {
