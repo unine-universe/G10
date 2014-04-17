@@ -10,6 +10,7 @@ from unipy.compte import Compte
 from unipy.creerAnnonce import CreerAnnonce
 from unipy.registerLogin import RegisterLogin
 from unipy.moderateurAnnonce import ModerateurAnnonce
+from unipy.gestionUtilisateur import GestionUtilisateur
 
 
 # Paramètres pour cherrypy, pas besoin de les modifier.
@@ -31,6 +32,7 @@ creerannonce = CreerAnnonce()
 register_login = RegisterLogin()
 
 moderateurAnnonces = ModerateurAnnonce()
+gestion_user = GestionUtilisateur()
 
 
 # Gestionnaire des chemins d'accès (p. ex. /annonces/new)
@@ -46,11 +48,14 @@ d.connect('mes-favoris'            , '/compte/favoris'              , controller
 d.connect('mes-favoris-annonces'   , '/compte/favoris/annonces'     , controller=compte, action='favorisAnnonces')
 d.connect('mes-favoris-recherche'  , '/compte/favoris/recherche'    , controller=compte, action='favorisRecherche')
 d.connect('creer-annonce'          , '/creer-annonce'               , controller=creerannonce, action='creer')
+d.connect('enregistrer-annonce'    , '/creer/sauvegarder'           , controller=creerannonce, action='save')
 d.connect('changer-motdepasse'     , '/compte/change-motdepasse'    , controller=compte, action='changerMotDePasse')
 d.connect('inscription'            , '/inscription'                 , controller=register_login, action='register')
 d.connect('login'                  , '/login'                       , controller=register_login, action='login')
 d.connect('moderateur-annonces'    , '/admin/annonces'              , controller=moderateurAnnonces, action='annonces')
 d.connect('moderateur-a-effacer'   , '/admin/annonce/delete'        , controller=moderateurAnnonces, action='remove')
+d.connect('admin-users'            , '/admin/users'                 , controller=gestion_user, action='adminUsers')
+d.connect('admin-user'            , '/admin/user'                   , controller=gestion_user, action='adminUser')
 
 # Configuration pour l'application
 conf = {

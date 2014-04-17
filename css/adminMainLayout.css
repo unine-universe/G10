@@ -1,0 +1,97 @@
+* { padding: 0; margin: 0; }
+
+body {
+	background-image:url('../img/paquerettes3-2.jpg');
+	background-attachment:scroll;
+	background-size:auto auto;
+	background-repeat:no-repeat;
+	background-position:center center;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+}
+
+a {
+	color: white;
+}
+
+a:focus {
+	outline: none;
+}
+.clear {
+	clear: both;
+}
+
+#wrapperAdmin { 
+ padding: 0;
+ margin: 0 auto;
+ width: 1000px;
+ background-color:rgba(223,223,223,0.5);
+}
+
+#headerAdmin { 
+ width: 980px;
+ clear: both;
+ color: white;
+ background-color: rgba(26,109,152,1);
+ margin: 0px 0px 10px 0px;
+ padding: 10px;
+ position:fixed;
+ text-align:right;
+ z-index: 999;
+}
+
+#headerAdmin2 {
+ color: #333;
+ width: 980px;
+ float: left;
+ padding: 10px;
+ height: 100px;
+ margin: 30px 0px 5px;
+}
+
+#headerAdmin2 img{
+ height: 100px;
+}
+
+#messageAdmin {
+ color: rgba(26,109,152,1);
+ font: 50px "Brush Script Std";
+ width: 600px;
+ float: right;
+ padding: 30px 0 0;
+ height: 100px;
+ margin-right: 100px;
+}
+
+#navigationAdmin {
+ float: left;
+ width: 900px;
+ color: #333;
+ padding: 10px;
+ margin: 0px 0px 5px 0px;
+}
+#leftcolumnAdmin { 
+ color: #333;
+ margin: 0px 5px 5px 0px;
+ padding: 10px;
+ height: 500px;
+ width: 250px;
+ float: left;
+}
+#rightcolumnAdmin { 
+ float: right;
+ color: #333;
+ margin: 0px 0px 5px 0px;
+ padding: 10px;
+ height: 500px;
+ width: 678px;
+ display: inline;
+}
+#footerAdmin { 
+ width: 980px;
+ clear: both;
+ color: #333;
+ background-color: rgba(26,109,152,1);
+ margin: 0px 0px 10px 0px;
+ padding: 10px;
+}

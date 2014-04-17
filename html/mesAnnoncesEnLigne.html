@@ -62,8 +62,22 @@
             Vous avez actuellement 1 annonce(s) en ligne:
             </div>
             <div class="sub_box2">
-            Exemple
+            {% for a in annonces %}
+            <div>
+            		<table>
+            		<tr><td>Type</td><td>{{ a[1] }}</td></tr>
+            		<tr><td>Catégorie</td><td>{{ a[3] }}</td></tr>
+            		<tr><td>Faculté</td><td>{{ a[4] }}</td></tr>
+            		<tr><td>Titre</td><td><strong>{{ a[5] }}</strong></td></tr>
+            		<tr><td>Description</td><td>{{ a[6] }}</td></tr>
+            		<tr><td>Prix</td><td>{{ a[7] }}</td></tr>
+            		{% for pic in pics[a[0]] %}
+            			<tr><td colspan="2"><img src="{{ pic[0] }}"/></td></tr>
+            		{% endfor %}
+            		</table>
+            </div>
             <hr>
+            {% endfor %}
             </div>
        </div>
        

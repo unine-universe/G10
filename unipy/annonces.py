@@ -27,9 +27,8 @@ class Annonces(object):
         
         cursor.close()
         db.close()
-        cherrypy.log.error(str(type(annonce)))
         if annonce:
             # Charger et compléter le template HTML
-            return self.env.get_template('afficherAnnonce.html').render(prix = annonce[6], desc = annonce[5])
+            return self.env.get_template('afficherAnnonce.html').render(prix = annonce[7], desc = annonce[6])
         else:
             return '<h1>Erreur, annonce inexistante</h1>'
