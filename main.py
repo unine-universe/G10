@@ -41,7 +41,7 @@ d.connect('accueil'                , '/'                            , controller
 d.connect('annonce'                , '/annonce'                     , controller=annonces, action='annonce')
 d.connect('mon-compte'             , '/compte'                      , controller=compte, action='index')
 d.connect('mes-annonces'           , '/compte/annonces'             , controller=compte, action='annonces')
-d.connect('mes-annonces-enligne'   , '/compte/annonces/enligne'       , controller=compte, action='annoncesEnLigne')
+d.connect('mes-annonces-enligne'   , '/compte/annonces/enligne'     , controller=compte, action='annoncesEnLigne')
 d.connect('mes-annonces-archives'  , '/compte/annonces/archives'    , controller=compte, action='annoncesArchives')
 d.connect('mes-favoris'            , '/compte/favoris'              , controller=compte, action='favoris')
 d.connect('mes-favoris-annonces'   , '/compte/favoris/annonces'     , controller=compte, action='favorisAnnonces')

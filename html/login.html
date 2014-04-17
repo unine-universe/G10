@@ -9,7 +9,7 @@
 
         <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
 
-     	<link rel="stylesheet" href="/css/login-gestioncompte.css">
+     	<link rel="stylesheet" href="../css/login-gestioncompte.css">
         <script src="js/vendor/modernizr-2.7.1.min.js"></script>
  
  <style type="text/css">
@@ -112,18 +112,19 @@ color: grey;
  
     </head>
     <body>
-    <div id="filter"></div>
+    <div id="filter">
+    </div>
     <div id="login_area">
 	<div class="close_button"><a href="#">&#10005;</a></div>
     <h2>Login</h2>
-    	<form>
+    	<form method="post" action="login">
     		<div id="info_zone">
     			<label for="user_name">Nom d'utilisateur</label><input type="text" id="user_name" name="user_name" placeholder="Nom d'utilisateur" /><br />
     			<label for="password">Mot de passe</label><input type="password" id="password" name="password" placeholder="Mot de passe" /><br />
-    			<div class="button"><div class="login"><a href="#">Login</a></div></div>
+    			<div class="button"><input type="submit" value="envoyer" /></div>
     		</div>
     	</form>
-    	<div class="register_link"><a href="#">Inscription</a></div>
+    	<div class="register_link"><a href="inscription.html">Inscription</a></div>
     </div>
     <div id="entire_page">
     	<header>
