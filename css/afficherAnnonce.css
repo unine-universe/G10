@@ -1,7 +1,7 @@
 #Description {
 	width:64.5%; 
 	float:left; 
-	margin-left:1%;
+	margin-left:0.5%;
 	background-color:#F2F2F2;
 	border:1px solid rgba(0,0,0,0.1);
 	padding-top:0.3%;
@@ -14,17 +14,22 @@
 	padding: 1px; 
 	background-color: white;
 	padding-bottom:3%;
-
+	background-color:#F2F2F2;
 }
 
 #Tableau {
-	background-color:white;
+	background-color:#F2F2F2;
 	padding-bottom:3%;
 	}
 	
 #Maxibox {
-	width:100%
-	background-color:#F2F2F2;	
+	position:relative;
+	background-color: rgba(255,255,255,0.8);
+	border-radius: 8px;
+	padding-top: 1px;
+	width:70%;
+	float:right;
+	margin-top:50px;
 	}
 	
 #DivDroite {
@@ -33,6 +38,7 @@
 	float:right;
 	border:1px solid rgba(0,0,0,0.1);
 	padding-bottom: 0.5%;
+	margin-right:0.5%
 	}
 	
 #ImgBoxTopImg {
@@ -50,11 +56,12 @@
 
 
 .TopLine{
-	margin-left:1%;
-	margin-top:1%;
+	margin-left:0.5%;
+	margin-top:0.5%;
 	margin-bottom:1.5%;
 	width:99%;
-	background-color:lightBlue;
+	background-color:#0881A5;
+	
 	border:1px solid rgba(0,0,0,0.1);
 	border-radius:6px;
 }
@@ -90,8 +97,67 @@
 	margin:75% 10% 10% 10%;
 }
 
+.content{
+	margin-bottom:0px;
+	background-color:rgba(223,223,223,0.5);
+	padding:1em;
+	position: relative;
+	float:left;
+	width:80%;
+	height: 114;
+	min-height:700px;
+	top: 10px;
+	left: 100px;
+}
 
 
+.Titre{
+	position: relative;
+	float: left;
+	bottom: 200px;
+	font-style:normal;
+	font-weight: bold;
+}
 
+.login{
+	padding-right:10px;
+	background-color:#0881A5;
+	position:fixed;
+	width:80;
+	top: 0px;
+	left: 107px;
+	right:50px;
+	height: 30px;
+	color: #EDEDED;
+	text-align:right;
+	margin-bottom: 20px;
+	padding-top: 10px;
+	z-index: 999;
+}
 
-	
+.logo{
+	padding: 1em;
+	width:20%;
+	height:20%;
+	position: relative;
+	left: 7%;
+	top: 3%;
+
+}
+
+.MenuGauche{
+	padding-top:50px;
+	margin-left: 8.2%;
+
+	position:relative;
+	float:left;
+}
+body{
+	background-image:url('../img/paquerettes3-2.jpg');
+	background-attachment:scroll;
+	background-size:150% 150%;
+	background-repeat:no-repeat;
+	background-position:10% 0px;
+	font-family:Arial, Helvetica, sans-serif;
+	height:100%;
+}
