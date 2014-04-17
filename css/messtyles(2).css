@@ -1,10 +1,14 @@
+*
+{
+font-family: Sans Serif, Helvetica, Arial
+}
 body
 {
 	background-image:url("paquerettes3-2.jpg.");7
 	background-repeat:no-repeat;
 	background-position:center center;
 	background-attachment:fixed;
-	background-size:110% 110%;
+	background-size:100% 100%;
 
 			
 }
@@ -24,38 +28,58 @@ body
 	height: 114;
 	min-height:700px;
 	left: 100px;
-	
-.table
-{		
-
-}
 
 
-
-
-.titre
-{	padding: 0px 0px 0px 500px;
-	float:center;
-	bottom:200px;
-	font-style:arial;
-	
 }
 
 .logo
 {
-	padding: 1em;
-	width:180px;
-	height:114;
+	float:left;
 	position: relative;
-	left: 0px;
-	top: 7px;
+	left: 10px;
+	top: 0px;
+	
 }
 
 
-img
 
+.title
+{	
+	padding: 0px 0px 0px 500px;
+	float:center;
+	bottom:200px;
+	font-size:20px;
+	
+	
+	
+}
+
+
+
+
+	
+table
 {
-	width: 100px;
+	border-collapse:collapse;
+	position:absolute;
+	left:350px;
+	top:200px;
+
 }
+
+table, td, th
+{
+	background-color: white;
+	position:relative;
+	border: 1px solid black;
 	
 
+	
+
+}
+th
+{
+	background-color:DeepSkyBlue;
+	color:black;
+	
+}
