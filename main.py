@@ -31,6 +31,7 @@ annonces = Annonces()
 compte = Compte()
 creerannonce = CreerAnnonce()
 register_login = RegisterLogin()
+
 moderateurAnnonces = ModerateurAnnonce()
 gestion_user = GestionUtilisateur()
 rubrique = Rubrique()

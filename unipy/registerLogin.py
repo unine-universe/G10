@@ -6,6 +6,7 @@ Created on Apr 6, 2014
 import cherrypy
 from jinja2.environment import Environment
 from jinja2.loaders import FileSystemLoader
+from unipy.db import openDB
 
 class RegisterLogin(object):
     env = None

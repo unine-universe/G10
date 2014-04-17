@@ -77,8 +77,12 @@ ul#main-nav li.forum {
 	margin-bottom: 10px;
 	padding-left: 5px;
 	padding-top: 20px;
+<<<<<<< HEAD
 } 
 
+=======
+}
+>>>>>>> 8437411c28fa1707430096ce71b58ea30c8c3ae3
 #tabannonceAdmin{
 	margin-left: 10px;
 	margin-right: 10px;
@@ -87,6 +91,7 @@ ul#main-nav li.forum {
 	color: black;
 }
 
+<<<<<<< HEAD
 .imageannonceAdmin {
 	margin-left: 5px;
 	width. 90px;
@@ -103,12 +108,17 @@ ul#main-nav li.forum {
 }
 
 
+=======
+>>>>>>> 8437411c28fa1707430096ce71b58ea30c8c3ae3
 #pagesAdmin {
 	font-size: 12px;
 	padding-top: 5px;
 	text-align: center;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8437411c28fa1707430096ce71b58ea30c8c3ae3
 #featured-contentAdmin {
 	position: relative;
 	width: 322px;
