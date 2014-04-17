@@ -17,4 +17,4 @@ class Rubrique(object):
     
     def rubriques(self):
         # Charger et compléter le template HTML
-        return self.env.get_template('rubriques.html').render()
+        return self.env.get_template('adminRubriques.html').render()

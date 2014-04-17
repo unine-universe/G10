@@ -95,3 +95,16 @@ a:focus {
  margin: 0px 0px 10px 0px;
  padding: 10px;
 }
+
+.content-box{
+	position: relative;
+	background: white;
+	color: black;
+	width: 92%;
+	height: 90%;
+	padding: 2%;
+	margin: auto;
+}
+.content-box a{
+	color: blue;
+}

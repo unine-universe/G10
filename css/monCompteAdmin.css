@@ -142,9 +142,9 @@ body{
 	border-radius: 10px;
 	-webkit-box-shadow: 5px 5px 10px black;
 	-moz-box-shadow: 5px 5px 10px black;
-	left: 300px;
+	/*left: 300px;
 	bottom: 10px;
-	float:left;
+	float:left;*/
 	width: 600px;
 	height: 200px;
 }

@@ -4,7 +4,7 @@ font-family: Sans Serif, Helvetica, Arial
 }
 body
 {
-	background-image:url("paquerettes3-2.jpg.");7
+	background-image:url("/img/paquerettes3-2.jpg");
 	background-repeat:no-repeat;
 	background-position:center center;
 	background-attachment:fixed;
@@ -62,8 +62,7 @@ table
 {
 	border-collapse:collapse;
 	position:absolute;
-	left:350px;
-	top:200px;
+	padding: 3%;
 
 }
 

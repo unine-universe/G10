@@ -16,8 +16,8 @@ class GestionUtilisateur(object):
     
     def adminUsers(self):
         # Charger et compléter le template HTML
-        return self.env.get_template('GestionUserAdmin.html').render()
+        return self.env.get_template('adminUtilisateurs.html').render()
     
     def adminUser(self, user):
         # Charger et compléter le template HTML
-        return '<h1>User:' + user + '</h1>' + self.env.get_template('monCompteAdmin.html').render()
+        return self.env.get_template('adminUtilisateur.html').render(user = user)

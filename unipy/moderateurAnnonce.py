@@ -14,9 +14,27 @@ class ModerateurAnnonce(object):
         # Référence au dossier HTML
         self.env = Environment(loader=FileSystemLoader('html'))
     
+    def annonces_accueil(self):
+        # Charger et compléter le template HTML
+        return self.env.get_template('adminGestion.html').render()
+    
     def annonces(self):
         # Charger et compléter le template HTML
-        return self.env.get_template('annoncesModerateur.html').render()
+        return self.env.get_template('adminAnnonces.html').render()
+        
+    def annonce(self, a_id):
+        db = openDB()
+        cursor = db.cursor()
+        cursor.execute("SELECT * FROM annonce WHERE id='{0}'".format(a_id))
+        annonce = cursor.fetchone() # prendre une ligne. fetchall() égal à tous les lignes.
+        
+        cursor.close()
+        db.close()
+        if annonce:
+            # Charger et compléter le template HTML
+            return self.env.get_template('annoncesModerateur.html').render(a_id = annonce[0], prix = annonce[7], desc = annonce[6])
+        else:
+            return '<h1>Erreur, annonce inexistante</h1>'
     
     def remove(self, a_id):
         db = openDB()
