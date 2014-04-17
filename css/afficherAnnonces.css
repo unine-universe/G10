@@ -16,6 +16,232 @@ html {
     line-height: 1.4;
 }
 
+body{
+	background-image:url('/img/paquerettes3-2.jpg');
+	background-attachment:fixed;
+	background-size:110% 110%;
+	background-repeat:no-repeat;
+	background-position:center center;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+.content{
+	margin-bottom:0px;
+	background-color:rgba(223,223,223,0.5);
+	padding:1em;
+	position: relative;
+	float:left;
+	width: 1050px;
+	height: 114;
+	min-height:700px;
+	top: 10px;
+	left: 100px;
+}
+
+
+.login{
+	padding-right:10px;
+	background-color:#0881A5;
+	position:fixed;
+	width: 1074px;
+	top: 0px;
+	left: 107px;
+	right:50px;
+	height: 30px;
+	color: #EDEDED;
+	text-align:right;
+	margin-bottom: 20px;
+	padding-top: 10px;
+	z-index: 999;
+}
+
+
+.Titre{
+	position: relative;
+	float: left;
+	bottom: 200px;
+	font-style:normal;
+	font-weight: bold;
+}
+
+.logo{
+	padding: 1em;
+	width:180px;
+	height:114;
+	position: relative;
+	left: 70px;
+	top: 7px;
+}
+
+
+.menu_cote{
+	padding: 1em;
+	width:180px;
+	height:114;
+	position: relative;
+	left: 50px;
+	bottom: 305px;
+}
+
+.recherche{
+	position:relative;
+	border: solid 2px  #0881A5;
+	background-color: #FFF;
+	opacity:0.75;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	-webkit-box-shadow: 5px 5px 10px black;
+	left: 300px;
+	bottom: 400px;
+	float: left;
+	width: 50%;
+}
+
+.Recherche_mots_cles{
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	margin-right:auto;
+	margin:30px;
+	padding:10px;
+	border:solid #CBCBCB 1px;
+	padding-bottom: 10px;
+	position: relative;	
+}
+
+.Recherche_avancee{
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	margin-right:auto;
+	margin:30px;
+	padding:10px;
+	border:solid #CBCBCB 1px;
+	padding-bottom: 20px;
+	position: relative;
+}
+
+.barre{
+	position: relative;
+	border: solid 2px  #0881A5;
+	background-color:#FFF;
+	opacity:0.75;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	-webkit-box-shadow: 5px 5px 10px black;
+	width:220px;
+	padding:10px;
+	Margin:0px; 
+	left: 255px;
+	bottom: 350px;
+	float: left;
+	width: 50%;
+}
+
+
+.Annonces1{
+	position: relative;
+	border: solid 2px  #0881A5;
+	background-color:#FFF;
+	opacity:0.75;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	-webkit-box-shadow: 5px 5px 10px black;
+	width:220px;
+	padding:10px;
+	Margin:0px; 
+	left: 255px;
+	bottom: 330px;
+	float: left;
+	width: 50%;
+}
+
+.Annonces2{
+	position: relative;
+	border: solid 2px  #0881A5;
+	background-color:#FFF;
+	opacity:0.75;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	-webkit-box-shadow: 5px 5px 10px black;
+	width:220px;
+	padding:10px;
+	Margin:0px; 
+	left: 255px;
+	bottom: 280px;
+	float: left;
+	width: 50%;
+}
+
+.Annonces3{
+	position: relative;
+	border: solid 2px  #0881A5;
+	background-color:#FFF;
+	opacity:0.75;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	-webkit-box-shadow: 5px 5px 10px black;
+	width:220px;
+	padding:10px;
+	Margin:0px; 
+	left: 255px;
+	left: 255px;
+	bottom: 230px;
+	float: left;
+	width: 50%;
+}
+
+
+.Titre_annonce{
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	margin-right: ;
+	margin:30px;
+	padding:10px;
+	border:solid #CBCBCB 1px;
+	padding-bottom: 60px;
+	position: relative;
+	bottom: 60px;
+	
+}
+.Image_annonce1{
+	padding: 1em;
+	width:180px;
+	height:114;
+	position: relative;
+	left: 400px;
+	top: 7px;
+	vertical-align:middle;
+}
+
+.Image_annonce2{
+	padding: 1em;
+	width:180px;
+	height:114;
+	position: relative;
+	left: 400px;
+	top: 7px;
+	vertical-align:middle;
+}
+
+.Image_annonce3{
+	padding: 1em;
+	width:180px;
+	height:114;
+	position: relative;
+	left: 400px;
+	top: 7px;
+	vertical-align:middle;
+}
+
+
+
 /*
  * Remove text-shadow in selection highlight: h5bp.com/i
  * These selection rule sets have to be separate.
@@ -263,3 +489,4 @@ textarea {
         page-break-after: avoid;
     }
 }
+

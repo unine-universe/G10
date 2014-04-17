@@ -1,0 +1,196 @@
+body{
+	background-image:url('/img/paquerettes3-2.jpg');
+	background-attachment:scroll;
+	background-size:110% 110%;
+	background-repeat:no-repeat;
+	background-position:center center;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+.content{
+	margin-bottom:0px;
+	background-color:rgba(223,223,223,0.5);
+	padding:1em;
+	position: relative;
+	float:left;
+	width: 90%;
+	height: auto;
+	min-height:70%;
+	top: 10px;
+	left: 100px;
+}
+
+.nav {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	overflow:hidden;
+}
+
+.navlist{
+	list-style-position:inside;
+	margin:0,
+	padding:0;
+	overflow:hidden;
+}
+.nav .nav-item {
+    float: right;
+    background-color: #EDEDED;
+	width: 15.5%;
+	left: 280px;
+	right:0px;
+	height: 25px;
+	color: #EDEDED;
+	padding: 10px;
+}
+.photo {
+	position:relative;
+	float:right;
+	right:10px;
+	font-system:normal;
+	font-weight:bold;
+}
+
+
+.accueil{
+	position: relative;
+	float: right;
+	bottom: 200px;
+	font-style:normal;
+	font-weight: bold;
+}
+
+.logo{
+	padding: 1em;
+	width:180px;
+	height:114;
+	position: relative;
+	left: 70px;
+	top: 7px;
+}
+
+
+.onglet1{
+	float: left;
+	background-color:#FFF;
+	border-left:solid 2px  #0881A5;
+	border-top:solid 5px  #0881A5;
+	border-right:solid 5px  #0881A5;
+	-webkit-border-top-left-radius: 10px;
+	-moz-border-top-left-radius: 10px;
+	border-top-left-radius: 10px;
+	position: relative;
+	bottom: 5px;
+	right: 5px;
+	border-bottom:solid 5px #FFF;
+	z-index: 15;
+	padding: 5px;
+}
+
+
+.box{
+	position:relative;
+	border: solid 2px  #0881A5;
+	background-color:#FFF;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 5px;
+	-webkit-box-shadow: 5px 5px 10px black;
+	center: 50px;
+	bottom: 5px;
+	float:right;
+	width: 75%;
+}
+
+.box2{
+	position:relative;
+	border: solid 2px  #0881A5;
+	background-color:#FFF;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-box-shadow: 5px 5px 10px black;
+	center: 20px;
+	bottom: 5px;
+	float:right;
+	width: 35%;
+	margin-right 15px;
+}
+.box2 table{
+	width: 100%; padding: 1%;
+}
+.box2 table td{
+	padding: 20px;
+}
+.texto{
+	text-align: center;
+}
+
+.liste{
+	position: :relative;
+	border:solid 5px #0881A5;
+	background-color:#EDEDED;
+	border-radius:10px;
+	right:50px;
+	bottom:4px;
+	float:left;
+	width: :75%;
+	padding: 25px 50px;
+}
+	
+.box1{
+	position:relative;
+	border: solid 2px  #0881A5;
+	background-color:#FFF;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	-webkit-box-shadow: 5px 5px 10px black;
+	center: 20px;
+	bottom: 85px;
+	float:right;
+	width: 75%;
+}
+
+.sub_box1{
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	margin-right:auto;
+	margin:30px;
+	padding:10px;
+	border:solid #CBCBCB 1px;
+	padding-bottom: 10px;
+	position: relative;
+	float:right;	
+}
+
+
+.band{
+	position: absolute;
+	bottom: 500px;
+	background-color: #0881A5;
+	width: 95.4%;
+	left: 250px;
+	right:0px;
+	height: 25px;
+	color: #EDEDED;
+	padding: 10px;
+}
+
+.img-livre{
+	float:right;
+	width: 75px;
+	padding: 1em;
+	height:114;
+	position: relative;
+	left: 70px;
+	top: 7px;
+}
+
+.sup{
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
