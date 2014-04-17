@@ -32,10 +32,25 @@
 			$('#annonceRediger').show();
 			$('#annonceOffre').hide();
 		});
+		$('#typeRetour1').click(function(e){
+			e.preventDefault();
+			$('#annonceType').show();
+			$('#annonceOffre').hide();
+		});
 		$('#typeRediger').click(function(e){
 			e.preventDefault();
 			$('#annonceValider').show();
 			$('#annonceRediger').hide();
+		});
+		$('#typeRetour2').click(function(e){
+			e.preventDefault();
+			$('#annonceOffre').show();
+			$('#annonceRediger').hide();
+		});
+		$('#typeRetour3').click(function(e){
+			e.preventDefault();
+			$('#annonceRediger').show();
+			$('#annonceValider').hide();
 		});
 	});
 	</script>
@@ -81,20 +96,20 @@
 
 			<Form method="post">
 				<p>
-					<Input type="checkbox"> Livres <select name="Livres"
+					<Input type="radio" name="choix" value="livres"> Livres <select name="Livres"
 						size="1">
 						<option>de cours</option>
 						<option>Autres</option>
-					</select> <br> <br> <Input type="checkbox"> Cours de
+					</select> <br> <br> <Input type="radio" name="choix" value="soutien"> Cours de
 					soutien <br> Spécifier le cours <Input type="text"
 						name="Nom du cours"> <br> <br> <Input
-						type="checkbox"> Logements <select name="Logements"
+						type="radio" name="choix" value="logements"> Logements <select name="Logements"
 						size="1">
 						<option>Colocation</option>
 						<option>Appartements</option>
 						<option>Chambre individuelle</option>
 						<option>Chambre double</option>
-					</select> <br> <br> <Input type="checkbox"> Cours de
+					</select> <br> <br> <Input type="radio" name="choix" value="langue"> Cours de
 					langue <select name="Cours de Langues" size="1">
 						<option>Français</option>
 						<option>Anglais</option>
@@ -105,7 +120,7 @@
 						<option>Russe</option>
 						<option>Arabe</option>
 						<option>Hébreu</option>
-					</select> <br> <br> <Input type="checkbox"> Notes de cours
+					</select> <br> <br> <Input type="radio" name="choix" value="notes"> Notes de cours
 					<br> Spécifier le cours <Input type="text" name="Nom du cours">
 				</p>
 			</Form>
@@ -128,6 +143,9 @@
 
 			<Form action="404.html">
 				<a id="typeOffre" href="#" class="bouton">Continuer</a>
+			</Form>
+			<Form action="404.html">
+				<a id="typeRetour1" href="#" class="bouton">Retour</a>
 			</Form>
 			<br>
 
@@ -225,8 +243,11 @@
 			</table>
 
 			<Form action="404.html">
-
 				<a id="typeRediger" href="#" class="bouton">Continuer</a>
+			</Form>
+			
+			<Form action="404.html">
+				<a id="typeRetour2" href="#" class="bouton">Retour</a>
 			</Form>
 		</div>
 
@@ -257,7 +278,7 @@
 			<br>
 
 			<p>
-			<Form method="post"></Form>
+			
 			<Input type="checkbox"> Je confirme avoir lu et accepté les
 			conditions générales <br>
 
@@ -268,6 +289,10 @@
 			<Form action="404.html">
 				<input type="submit" name="Enregistrer" value="Enregistrer" />
 			</form>
+			<Form action="404.html">
+				<a id="typeRetour3" href="#" class="bouton">Retour</a>
+			</Form>
+			
 			<br>
 			<br>
 		</div>
