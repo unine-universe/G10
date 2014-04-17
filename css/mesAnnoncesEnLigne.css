@@ -4,10 +4,10 @@ html{
 
 body{
 	background-image:url('/img/paquerettes3-2.jpg');
-	background-attachment:scroll;
-	background-size:150% 150%;
+	background-attachment:fixed;
+	background-size:110% 110%;
 	background-repeat:no-repeat;
-	background-position:10% 0px;
+	background-position:center center;
 	font-family:Arial, Helvetica, sans-serif;
 	height:100%;
 }
