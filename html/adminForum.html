@@ -1,0 +1,113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Interface Administrateur</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" type="text/css" href="../css/adminMainLayout.css" />
+<link rel="stylesheet" type="text/css" href="../css/adminTabsLayout.css" />
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+</head>
+<body>
+<!-- Begin Wrapper -->
+<div id="wrapperAdmin">
+  <!-- Begin Header -->
+  <div id="headerAdmin">
+  	Connecté en tant que: "admin" | <a href="#">Logout</a>
+  </div>
+  <div id="headerAdmin2">
+  <img src="../img/Logo-unine.png" alt="logo"/>
+  <div id="messageAdmin">
+  	Bienvenu(e), Admin
+  </div>
+  </div>
+  <!-- End Header -->
+  <!-- Begin Navigation -->
+  <div id="navigationAdmin">
+  <form action="" class="search-form frame inbtn rlarge">
+      <input type="text" name="search" class="search-input" placeholder="Recherche ..." />
+      <input class="search-btn" type="submit" value="Go" />        
+  </form>
+  </div>
+  <!-- End Navigation -->
+  <!-- Begin Left Column -->
+  <div id="leftcolumnAdmin">
+  <div id="wrapperAdmin2">
+      <ul class="menu">
+          <li class="item1"><a href="#">Nouvelles annonces <span>14</span></a>
+              <ul>
+                  <li class="subitem1"><a href="#">Payantes<span>10</span></a></li>
+                  <li class="subitem2"><a href="#">Gratuites<span>4</span></a></li>
+              </ul>
+          </li>
+          <li class="item2"><a href="#">Nouvelles modifications <span>5</span></a>
+              <ul>
+                  <li class="subitem1"><a href="#">Payantes<span>3</span></a></li>
+                  <li class="subitem2"><a href="#">Gratuites<span>2</span></a></li>
+              </ul>
+          </li>
+          <li class="item3"><a href="#">Notifications <span>4</span></a>
+              <ul>
+                  <li class="subitem1"><a href="#">Utilisateurs<span>3</span></a></li>
+                  <li class="subitem2"><a href="#">Administrateur<span>1</span></a></li>
+              </ul>
+          </li>
+          <li class="item4"><a href="#">Paramètres</a>
+          </li>
+          <li class="item5"><a href="#">Profil</a>
+          </li>
+      </ul>
+  </div>
+  </div>
+  <!-- End Left Column -->
+  <!-- Begin Right Column -->
+  <div id="rightcolumnAdmin">
+  <div id="page-wrapAdmin">
+  	<ul id="main-nav">
+  		<li class="accueil"><a href="adminGestion.html">Accueil</a></li>
+  		<li class="annonces"><a href="adminAnnonces.html">Annonces</a></li>
+  		<li class="utilisateurs"><a href="adminUtilisateurs.html">Utilisateurs</a></li>
+  		<li class="rubriques"><a href="adminRubriques.html">Rubriques</a></li>
+  		<li class="current"><a href="adminForum.html">Forum</a></li>
+  	</ul>
+  	<div class="clear">
+  	</div>
+  	<div id="featuredAdmin">
+  	</div>
+  </div></div>
+  <!-- End Right Column -->
+  <!-- Begin Footer -->
+  <div id="footerAdmin">
+  </div>
+  <!-- End Footer -->
+ </div>
+<!-- End Wrapper -->
+
+<script type="text/javascript">
+$(function() {
+ 
+    var menu_ul = $('.menu > li > ul'),
+        menu_a  = $('.menu > li > a');
+     
+    menu_ul.hide();
+ 
+    menu_a.click(function(e) {
+        e.preventDefault();
+        if(!$(this).hasClass('active')) {
+            menu_a.removeClass('active');
+            menu_ul.filter(':visible').slideUp('normal');
+            $(this).addClass('active').next().stop(true,true).slideDown('normal');
+        } else {
+            $(this).removeClass('active');
+            $(this).next().stop(true,true).slideUp('normal');
+        }
+    });
+ 
+});
+</script>
+
+</body>
+</html>

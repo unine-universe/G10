@@ -8,16 +8,42 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
 
-        <link rel="stylesheet" href="/css/afficherAnnonce.css">
+
+        <link rel="stylesheet" href="../css/afficherAnnonce.css">
         
         <script src="/js/vendor/modernizr-2.7.1.min.js"></script>
     </head>
     <body>
  
+<div class="content">
+	
+		<div class="Titre">
+        	Universe
+  		</div>
+  		     
+		<div class="login">
+        	Login | Contact
+  		</div>
+
+    	<div class="logo">
+    		<img src="../img/Logo-unine.png" alt="Unine Logo"/>
+</div>
+
+<div class="MenuGauche">
+    			<b> Biens: </b> <br>
+        	Immobilier <br>
+        	Voitures <br>
+        	Livres <br>
+        	Autres <br>
+        	<b> Services: </b> <br>
+        	Cours de langues <br>
+        	Cours de maths <br>
+        	Cours d'informatique <br>
+        	Autres <br>
+        </div>
         
-        
+
 <div id="Maxibox">
 
 	<div class="TopLine">
@@ -40,13 +66,7 @@
 	
 	
 		<div id="DescriptionBox">
-		<p> Description : blabla </p>
-		<br>Autre ligne 
-		<br>Une nouvelle ligne
-		<br>Encore une! Eh beh!
-		<br>Pas grand chose à dire, en plus.
-		<br>C'est surtout histire de tester, voir si le texte s'aligne bien, si c'est moche, si il faut faire des modifications parce que la phrase est trop longue?
-		<br>Comme quoi, c'est pas parce qu'un texte ne veut rien dire qu'il est inutile. HTML poétique. 
+		{{ desc }} 
 		</div>
 	
 	
@@ -60,7 +80,7 @@
 	</tr>
 	<tr>
 		<td>Prix :</td> 
-		<td><i>CHF__.-</i></td>
+		<td><i>CHF {{ prix }}.-</i></td>
 	</tr>
 	<tr>
 		<td>Lieu :</td>
@@ -135,9 +155,8 @@
 </div>
 
 
+</div> 
 </div>
-<!-- Ferme la maxibox>
-
 
 
         

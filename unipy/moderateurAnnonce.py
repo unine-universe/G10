@@ -7,6 +7,7 @@ from jinja2.environment import Environment
 from jinja2.loaders import FileSystemLoader
 from unipy.db import openDB
 from unipy.registerLogin import require, member_of, any_of
+import cherrypy
 
 class ModerateurAnnonce(object):
     env = None
@@ -53,21 +54,21 @@ class ModerateurAnnonce(object):
         db = openDB()
         cursor = db.cursor()
         cursor.execute("SELECT * FROM annonce WHERE id='{0}'".format(a_id))
-        
-        
-        if bloquer:
-            # Charger et compléter le template HTML
-            return  # Email utilisateurs et modérateur. Besoin de faire le lien avec la base de données Users.
-            #return self.env.get_template('annoncesModerateur.html').render(a_id = annonce[0], prix = annonce[7], desc = annonce[6])
+        annonce = cursor.fetchone()
+        if annonce:
+            print('bloquer...')
+            #cursor = db.cursor()
+            cursor.execute("UPDATE annonce SET state='blocked' WHERE id='{0}'".format(a_id))
+            db.commit();
+            if cursor.rowcount == 1:        
+                raise cherrypy.HTTPRedirect('/admin/annonce?a_id=' + a_id)
+            else:
+                return "Erreur";
         else:
-            return '<h1>Erreur, annonce bloquée</h1>'
-        
-        db.commit()
-        cursor.close()
-        db.close()
+            cherrypy.HTTPRedirect('/')
     
     def modifier(self, a_id):
-         db = openDB()
+        db = openDB()
         cursor = db.cursor()
         cursor.execute("SELECT * FROM annonce WHERE id='{0}'".format(a_id))
         

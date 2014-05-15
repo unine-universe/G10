@@ -1,40 +1,44 @@
+html{
+	height:100%;	
+}
+
 body{
 	background-image:url('/img/paquerettes3-2.jpg');
 	background-attachment:scroll;
-	background-size:110% 110%;
+	background-size:150% 150%;
 	background-repeat:no-repeat;
-	background-position:center center;
+	background-position:10% 0px;
 	font-family:Arial, Helvetica, sans-serif;
+	height:100%;
 }
 
 .content{
-	margin-bottom:0px;
 	background-color:rgba(223,223,223,0.5);
 	padding:1em;
-	position: relative;
+	position: absolute;
 	float:left;
-	width: 1050px;
-	height: auto;
-	min-height:700px;
-	top: 10px;
-	left: 100px;
+	top: 0px;
+	left: 8%;
+	width: 80%;
+	height: 130%;
 }
 
 .user{
-	padding-right:10px;
+	padding-right:1%;
 	background-color:#0881A5;
 	position:fixed;
-	width: 1074px;
-	top: 0px;
-	left: 107px;
-	right:50px;
-	height: 30px;
+	float:left;
+	width: 81.5%;
+	left: 8%;
+	height: 5%;
 	color: #EDEDED;
 	text-align:right;
-	margin-bottom: 20px;
-	padding-top: 10px;
+	margin-bottom: 4%;
+	padding-top: 1%;
 	z-index: 999;
+	top: 0px;
 }
+
 
 .accueil{
 	position: relative;
@@ -46,21 +50,21 @@ body{
 
 .logo{
 	padding: 1em;
-	width:180px;
-	height:114;
+	width:20%;
+	height:20%;
 	position: relative;
-	left: 70px;
-	top: 7px;
+	left: 7%;
+	top: 3%;
 }
 
 .hyperlien1{
 	-moz-box-shadow: 5px 5px 10px black;
 	-webkit-box-shadow: 5px 5px 10px black;
 	box-shadow: 5px 5px 10px black;
-	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #FFF), color-stop(1, #FFF) );
-	background:-moz-linear-gradient( center top, #FFF 5%, ##fb9e25 100% );
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFF', endColorstr='#FFF');
-	background-color:#FFF;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ffc477), color-stop(1, #fb9e25) );
+	background:-moz-linear-gradient( center top, #ffc477 5%, #fb9e25 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffc477', endColorstr='#fb9e25');
+	background-color:#ffc477;
 	-webkit-border-top-left-radius:20px;
 	-moz-border-radius-topleft:20px;
 	border-top-left-radius:20px;
@@ -76,7 +80,7 @@ body{
 	text-indent:0;
 	border:2px solid #eeb44f;
 	display:inline-block;
-	color:#ffc477;
+	color:#ffffff;
 	font-family:Verdana;
 	font-size:15px;
 	font-weight:bold;
@@ -89,13 +93,14 @@ body{
 	text-shadow:1px 1px 0px #cc9f52;
 	position:absolute;
 	z-index: 10;
-	right: 830px;
+	right: 80%;
+	top: 25%;
 }
 .hyperlien1:hover {
-	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #FFF), color-stop(1, #FFF) );
-	background:-moz-linear-gradient( center top, #FFF 5%, #FFF 100% );
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFF', endColorstr='#FFF');
-	background-color:#FFF;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #fb9e25), color-stop(1, #ffc477) );
+	background:-moz-linear-gradient( center top, #fb9e25 5%, #ffc477 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fb9e25', endColorstr='#ffc477');
+	background-color:#fb9e25;
 }
 
 .hyperlien2 {
@@ -134,8 +139,8 @@ body{
 	text-shadow:1px 1px 0px #cc9f52;
 	position:absolute;
 	z-index: 10;
-	right: 830px;
-	top: 280px;
+	right: 80%;
+	top: 30%;
 }
 .hyperlien2:hover {
 	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #fb9e25), color-stop(1, #ffc477) );
@@ -146,10 +151,10 @@ body{
 	-moz-box-shadow: 5px 5px 10px black;
 	-webkit-box-shadow: 5px 5px 10px black;
 	box-shadow: 5px 5px 10px black;
-	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ffc477), color-stop(1, #fb9e25) );
-	background:-moz-linear-gradient( center top, #ffc477 5%, #fb9e25 100% );
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffc477', endColorstr='#fb9e25');
-	background-color:#ffc477;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #FFF), color-stop(1, #FFF) );
+	background:-moz-linear-gradient( center top, #FFF 5%, ##fb9e25 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFF', endColorstr='#FFF');
+	background-color:#FFF;
 	-webkit-border-top-left-radius:20px;
 	-moz-border-radius-topleft:20px;
 	border-top-left-radius:20px;
@@ -165,7 +170,7 @@ body{
 	text-indent:0;
 	border:2px solid #eeb44f;
 	display:inline-block;
-	color:#ffffff;
+	color:#ffc477;
 	font-family:Verdana;
 	font-size:15px;
 	font-weight:bold;
@@ -178,14 +183,14 @@ body{
 	text-shadow:1px 1px 0px #cc9f52;
 	position:absolute;
 	z-index: 10;
-	right: 830px;
-	top: 330px;
+	right: 80%;
+	top: 35%;
 }
 .hyperlien3:hover {
-	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #fb9e25), color-stop(1, #ffc477) );
-	background:-moz-linear-gradient( center top, #fb9e25 5%, #ffc477 100% );
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fb9e25', endColorstr='#ffc477');
-	background-color:#fb9e25;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #FFF), color-stop(1, #FFF) );
+	background:-moz-linear-gradient( center top, #FFF 5%, #FFF 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFF', endColorstr='#FFF');
+	background-color:#FFF;
 }
 .hyperlien4 {
 	position:relative
@@ -224,8 +229,8 @@ body{
 	text-shadow:1px 1px 0px #cc9f52;
 	position:absolute;
 	z-index: 10;
-	right: 830px;
-	top: 380px;
+	right: 80%;
+	top: 40%;
 }
 .hyperlien4:hover {
 	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #fb9e25), color-stop(1, #ffc477) );
@@ -234,7 +239,6 @@ body{
 	background-color:#fb9e25;
 
 }
-
 
 .onglet1{
 	float: left;
@@ -246,8 +250,8 @@ body{
 	-moz-border-top-left-radius: 10px;
 	border-top-left-radius: 10px;
 	position: relative;
-	bottom: 81px;
-	left: 350px;
+	bottom: 7.5%;
+	left: 30%;
 	border-bottom:solid 2px #FFF;
 	z-index: 10;
 	padding: 2px;
@@ -260,8 +264,8 @@ body{
 	-moz-border-top-right-radius: 10px;
 	border-top-right-radius: 10px;
 	position: relative;
-	bottom: 81px;
-	left: 350px;
+	bottom: 7.5%;
+	left: 30%;
 	z-index: 1;
 	background-color: #CCC;
 	color: #999;
@@ -276,8 +280,8 @@ body{
 	-moz-border-radius: 10px;
 	border-radius: 10px;
 	-webkit-box-shadow: 5px 5px 10px black;
-	left: 125px;
-	bottom: 75px;
+	left: 12%;
+	bottom: 7%;
 	float:left;
 	width: 75%;
 }

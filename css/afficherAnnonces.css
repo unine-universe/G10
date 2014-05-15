@@ -12,7 +12,7 @@
 
 html {
     color: #222;
-    font-size: 1em;
+    font-size: 0.95em;
     line-height: 1.4;
 }
 
@@ -83,19 +83,18 @@ body{
 	bottom: 305px;
 }
 
-.recherche{
-	position:relative;
-	border: solid 2px  #0881A5;
-	background-color: #FFF;
-	opacity:0.75;
-	-webkit-border-radius: 10px;
-	-moz-border-radius: 10px;
-	border-radius: 10px;
-	-webkit-box-shadow: 5px 5px 10px black;
-	left: 300px;
-	bottom: 400px;
-	float: left;
-	width: 50%;
+.recherche {
+    background-color: #FFFFFF;
+    border: 2px solid #0881A5;
+    border-radius: 10px;
+    bottom: 400px;
+    float: left;
+    height: 230px;
+    left: 300px;
+    opacity: 0.75;
+    padding: 15px;
+    position: relative;
+    width: 49%;
 }
 
 .Recherche_mots_cles{
@@ -117,6 +116,7 @@ body{
 	margin-right:auto;
 	margin:30px;
 	padding:10px;
+	height: 90px
 	border:solid #CBCBCB 1px;
 	padding-bottom: 20px;
 	position: relative;
@@ -134,7 +134,7 @@ body{
 	width:220px;
 	padding:10px;
 	Margin:0px; 
-	left: 255px;
+	left: 300px;
 	bottom: 350px;
 	float: left;
 	width: 50%;
@@ -153,10 +153,11 @@ body{
 	width:220px;
 	padding:10px;
 	Margin:0px; 
-	left: 255px;
+	left: 300px;
 	bottom: 330px;
 	float: left;
 	width: 50%;
+	height: 150px	
 }
 
 .Annonces2{
@@ -171,10 +172,11 @@ body{
 	width:220px;
 	padding:10px;
 	Margin:0px; 
-	left: 255px;
-	bottom: 280px;
+	left: 300px;
+	bottom: 300px;
 	float: left;
 	width: 50%;
+	height: 150px	
 }
 
 .Annonces3{
@@ -189,11 +191,11 @@ body{
 	width:220px;
 	padding:10px;
 	Margin:0px; 
-	left: 255px;
-	left: 255px;
-	bottom: 230px;
+	left: 300px;
+	bottom: 270px;
 	float: left;
 	width: 50%;
+	height: 150px	
 }
 
 
@@ -205,9 +207,9 @@ body{
 	margin:30px;
 	padding:10px;
 	border:solid #CBCBCB 1px;
-	padding-bottom: 60px;
+	padding-bottom: 40px;
 	position: relative;
-	bottom: 60px;
+	bottom: 50px;
 	
 }
 .Image_annonce1{
@@ -290,7 +292,7 @@ video {
 
 fieldset {
     border: 0;
-    margin: 0;
+    margin: 15px;
     padding: 0;
 }
 
